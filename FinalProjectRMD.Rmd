@@ -1,18 +1,45 @@
 ---
-title: "R Notebook"
+title: 'Final Project'
+author: "Vince Birch"
+date: 'Due: May 1'
 output: html_notebook
 ---
 
-This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+# Front matter
 
-Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+```{r echo=TRUE, message=FALSE}
+# always clean up R environment
+rm(list = ls())
 
-```{r}
-plot(cars)
+# load all packages here
+library(mdsr)
+library(tidyverse)
+library(lubridate)
+library(mosaic)
+library(Hmisc)
+library(dplyr)
+library(Lahman)
+library(rvest)
+library(methods)
+library(readr)
+library(rpart)
+library(ROCR)
+library(NHANES)
+library(tidyr)
+
+
 ```
 
-Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+# Loading Data
 
-When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+```{r}
+CitiesPopulationRaw <- 
+  read.csv(file = "CitiesPopulation.csv", header = TRUE, sep = ",")
+CitiesEconomyRaw <- 
+  read.csv(file = "CitiesEconomy.csv", header = TRUE, sep = ",")
+CitiesIncomeDistributionRaw <- 
+  read.csv(file = "CitiesIncomeDistribution.csv", header = TRUE, sep = ",")
+CitiesEnvironmentRaw <- 
+  read.csv(file = "CitiesEnvironment.csv", header = TRUE, sep = ",")
+```
 
-The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
