@@ -9,7 +9,7 @@
 <meta name="generator" content="pandoc" />
 
 
-<meta name="author" content="Vince Birch" />
+<meta name="author" content="Vince Birch &amp; Stephen Polacheck" />
 
 
 <title>Final Project</title>
@@ -172,7 +172,7 @@ $(document).ready(function () {
 
 
 <h1 class="title toc-ignore">Final Project</h1>
-<h4 class="author"><em>Vince Birch</em></h4>
+<h4 class="author"><em>Vince Birch &amp; Stephen Polacheck</em></h4>
 <h4 class="date"><em>Due: May 1</em></h4>
 
 </div>
@@ -183,62 +183,24 @@ $(document).ready(function () {
 <h1>Front matter</h1>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBhbHdheXMgY2xlYW4gdXAgUiBlbnZpcm9ubWVudFxucm0obGlzdCA9IGxzKCkpXG4jIGxvYWQgYWxsIHBhY2thZ2VzIGhlcmVcbmxpYnJhcnkobWRzcilcbmBgYCJ9 -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBhbHdheXMgY2xlYW4gdXAgUiBlbnZpcm9ubWVudFxucm0obGlzdCA9IGxzKCkpXG4jIGxvYWQgYWxsIHBhY2thZ2VzIGhlcmVcbmxpYnJhcnkobWRzcilcbmxpYnJhcnkodGlkeXZlcnNlKVxubGlicmFyeShsdWJyaWRhdGUpXG5saWJyYXJ5KG1vc2FpYylcbmxpYnJhcnkoSG1pc2MpXG5saWJyYXJ5KGRwbHlyKVxubGlicmFyeShMYWhtYW4pXG5saWJyYXJ5KHJ2ZXN0KVxubGlicmFyeShtZXRob2RzKVxubGlicmFyeShyZWFkcilcbmxpYnJhcnkocnBhcnQpXG5saWJyYXJ5KFJPQ1IpXG5saWJyYXJ5KE5IQU5FUylcbmxpYnJhcnkodGlkeXIpXG5gYGAifQ== -->
 <pre class="r"><code># always clean up R environment
 rm(list = ls())
 # load all packages here
-library(mdsr)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoicGFja2FnZSDjpLzjuLFtZHNy46S847iyIHdhcyBidWlsdCB1bmRlciBSIHZlcnNpb24gMy41LjJwYWNrYWdlIOOkvOO4sWdncGxvdDLjpLzjuLIgd2FzIGJ1aWx0IHVuZGVyIFIgdmVyc2lvbiAzLjUuMlxuIn0= -->
-<pre><code>package 㤼㸱mdsr㤼㸲 was built under R version 3.5.2package 㤼㸱ggplot2㤼㸲 was built under R version 3.5.2</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeSh0aWR5dmVyc2UpXG5saWJyYXJ5KGx1YnJpZGF0ZSlcbmBgYCJ9 -->
-<pre class="r"><code>library(tidyverse)
-library(lubridate)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoicGFja2FnZSDjpLzjuLFsdWJyaWRhdGXjpLzjuLIgd2FzIGJ1aWx0IHVuZGVyIFIgdmVyc2lvbiAzLjUuMlxuIn0= -->
-<pre><code>package 㤼㸱lubridate㤼㸲 was built under R version 3.5.2</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShtb3NhaWMpXG5saWJyYXJ5KEhtaXNjKVxuYGBgIn0= -->
-<pre class="r"><code>library(mosaic)
-library(Hmisc)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoicGFja2FnZSDjpLzjuLFIbWlzY+OkvOO4siB3YXMgYnVpbHQgdW5kZXIgUiB2ZXJzaW9uIDMuNS4ycGFja2FnZSDjpLzjuLFGb3JtdWxh46S847iyIHdhcyBidWlsdCB1bmRlciBSIHZlcnNpb24gMy41LjJcbiJ9 -->
-<pre><code>package 㤼㸱Hmisc㤼㸲 was built under R version 3.5.2package 㤼㸱Formula㤼㸲 was built under R version 3.5.2</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShkcGx5cilcbmxpYnJhcnkoTGFobWFuKVxuYGBgIn0= -->
-<pre class="r"><code>library(dplyr)
-library(Lahman)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoicGFja2FnZSDjpLzjuLFMYWhtYW7jpLzjuLIgd2FzIGJ1aWx0IHVuZGVyIFIgdmVyc2lvbiAzLjUuMlxuIn0= -->
-<pre><code>package 㤼㸱Lahman㤼㸲 was built under R version 3.5.2</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShydmVzdClcbmxpYnJhcnkobWV0aG9kcylcbmxpYnJhcnkocmVhZHIpXG5saWJyYXJ5KHJwYXJ0KVxubGlicmFyeShST0NSKVxuYGBgIn0= -->
-<pre class="r"><code>library(rvest)
+library(mdsr)
+library(tidyverse)
+library(lubridate)
+library(mosaic)
+library(Hmisc)
+library(dplyr)
+library(Lahman)
+library(rvest)
 library(methods)
 library(readr)
 library(rpart)
-library(ROCR)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoicGFja2FnZSDjpLzjuLFST0NS46S847iyIHdhcyBidWlsdCB1bmRlciBSIHZlcnNpb24gMy41LjJwYWNrYWdlIOOkvOO4sWdwbG90c+OkvOO4siB3YXMgYnVpbHQgdW5kZXIgUiB2ZXJzaW9uIDMuNS4yXG4ifQ== -->
-<pre><code>package 㤼㸱ROCR㤼㸲 was built under R version 3.5.2package 㤼㸱gplots㤼㸲 was built under R version 3.5.2</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeShOSEFORVMpXG5gYGAifQ== -->
-<pre class="r"><code>library(NHANES)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoicGFja2FnZSDjpLzjuLFOSEFORVPjpLzjuLIgd2FzIGJ1aWx0IHVuZGVyIFIgdmVyc2lvbiAzLjUuMlxuIn0= -->
-<pre><code>package 㤼㸱NHANES㤼㸲 was built under R version 3.5.2</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeSh0aWR5cilcbiMgdXNlci0gZGVmaW5lZCBmdW5jdGlvbnMgaGVyZSAoaWYgYW55KVxuIyBzZWxlY3Rfb25lIC0gY2hvb3NlcyBvbmUgZWxlbWVudCBhdCByYW5kb20gZnJvbSBhIHZlY3RvclxuIyBhbnlfYWN0aXZlIC0gcmV0dXJucyB0cnVlIGlmIHNvbWVvbmUgaGFzIG5vdCBmaW5pc2hlZFxuIyBuZXh0X2N1c3RvbWVyIC0gcmV0dXJucyB0aGUgbmV4dCBjdXN0b21lciBpbiBsaW5lXG4jIHVwZGF0ZV9jdXN0b21lciAtIHNldHMgdGhlIGVuZCB0aW1lIG9mIGEgc3BlY2lmaWMgY3VzdG9tZXJcbiMgcnVuX3NpbSAtIHNpbXVsYXRpb24gb2YgYmFuayB3aGVyZSB0aGVyZSBpcyBqdXN0IG9uZSB0ZWxsZXIgLSBob3cgbXVjaCB0aW1lXG4jIGNhbXB1c19zaW0gLSBob3cgb2Z0ZW4gU2FsbHkgYW5kIEpvYW4gbWVldFxuIyBsb2FkIGRhdGFcbmBgYCJ9 -->
-<pre class="r"><code>library(tidyr)
-# user- defined functions here (if any)
-# select_one - chooses one element at random from a vector
-# any_active - returns true if someone has not finished
-# next_customer - returns the next customer in line
-# update_customer - sets the end time of a specific customer
-# run_sim - simulation of bank where there is just one teller - how much time
-# campus_sim - how often Sally and Joan meet
-# load data</code></pre>
+library(ROCR)
+library(NHANES)
+library(tidyr)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
@@ -247,7 +209,7 @@ library(ROCR)</code></pre>
 <h1>Loading Data</h1>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuQ2l0aWVzUG9wdWxhdGlvblJhdyA8LSBcbiAgcmVhZC5jc3YoZmlsZSA9IFwiQ2l0aWVzUG9wdWxhdGlvbi5jc3ZcIiwgaGVhZGVyID0gVFJVRSwgc2VwID0gXCIsXCIpXG5DaXRpZXNFY29ub215UmF3IDwtIFxuICByZWFkLmNzdihmaWxlID0gXCJDaXRpZXNFY29ub215LmNzdlwiLCBoZWFkZXIgPSBUUlVFLCBzZXAgPSBcIixcIilcbkNpdGllc0luY29tZURpc3RyaWJ1dGlvblJhdyA8LSBcbiAgcmVhZC5jc3YoZmlsZSA9IFwiQ2l0aWVzSW5jb21lRGlzdHJpYnV0aW9uLmNzdlwiLCBoZWFkZXIgPSBUUlVFLCBzZXAgPSBcIixcIilcbkNpdGllc0Vudmlyb25tZW50UmF3IDwtIFxuICByZWFkLmNzdihmaWxlID0gXCJDaXRpZXNFbnZpcm9ubWVudC5jc3ZcIiwgaGVhZGVyID0gVFJVRSwgc2VwID0gXCIsXCIpXG5gYGAifQ== -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuQ2l0aWVzUG9wdWxhdGlvblJhdyA8LSBcbiAgcmVhZC5jc3YoZmlsZSA9IFwiQ2l0aWVzUG9wdWxhdGlvbi5jc3ZcIiwgaGVhZGVyID0gVFJVRSwgc2VwID0gXCIsXCIpXG5DaXRpZXNFY29ub215UmF3IDwtIFxuICByZWFkLmNzdihmaWxlID0gXCJDaXRpZXNFY29ub215LmNzdlwiLCBoZWFkZXIgPSBUUlVFLCBzZXAgPSBcIixcIilcbkNpdGllc0luY29tZURpc3RyaWJ1dGlvblJhdyA8LSBcbiAgcmVhZC5jc3YoZmlsZSA9IFwiQ2l0aWVzSW5jb21lRGlzdHJpYnV0aW9uLmNzdlwiLCBoZWFkZXIgPSBUUlVFLCBzZXAgPSBcIixcIilcbkNpdGllc0Vudmlyb25tZW50UmF3IDwtIFxuICByZWFkLmNzdihmaWxlID0gXCJDaXRpZXNFbnZpcm9ubWVudC5jc3ZcIiwgaGVhZGVyID0gVFJVRSwgc2VwID0gXCIsXCIpXG5IYXBweUNpdGllc1JhdyA8LSBcbiAgcmVhZC5jc3YoZmlsZSA9IFwiSGFwcHlDaXRpZXMuY3N2XCIsIGhlYWRlciA9IFRSVUUsIHNlcCA9IFwiLFwiKVxuYGBgIn0= -->
 <pre class="r"><code>CitiesPopulationRaw &lt;- 
   read.csv(file = &quot;CitiesPopulation.csv&quot;, header = TRUE, sep = &quot;,&quot;)
 CitiesEconomyRaw &lt;- 
@@ -255,14 +217,16 @@ CitiesEconomyRaw &lt;-
 CitiesIncomeDistributionRaw &lt;- 
   read.csv(file = &quot;CitiesIncomeDistribution.csv&quot;, header = TRUE, sep = &quot;,&quot;)
 CitiesEnvironmentRaw &lt;- 
-  read.csv(file = &quot;CitiesEnvironment.csv&quot;, header = TRUE, sep = &quot;,&quot;)</code></pre>
+  read.csv(file = &quot;CitiesEnvironment.csv&quot;, header = TRUE, sep = &quot;,&quot;)
+HappyCitiesRaw &lt;- 
+  read.csv(file = &quot;HappyCities.csv&quot;, header = TRUE, sep = &quot;,&quot;)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 </div>
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogJ0ZpbmFsIFByb2plY3QnDQphdXRob3I6ICJWaW5jZSBCaXJjaCINCmRhdGU6ICdEdWU6IE1heSAxJw0Kb3V0cHV0OiBodG1sX25vdGVib29rDQotLS0NCg0KIyBGcm9udCBtYXR0ZXINCg0KYGBge3IgZWNobz1UUlVFLCBtZXNzYWdlPUZBTFNFfQ0KIyBhbHdheXMgY2xlYW4gdXAgUiBlbnZpcm9ubWVudA0Kcm0obGlzdCA9IGxzKCkpDQoNCiMgbG9hZCBhbGwgcGFja2FnZXMgaGVyZQ0KbGlicmFyeShtZHNyKQ0KbGlicmFyeSh0aWR5dmVyc2UpDQpsaWJyYXJ5KGx1YnJpZGF0ZSkNCmxpYnJhcnkobW9zYWljKQ0KbGlicmFyeShIbWlzYykNCmxpYnJhcnkoZHBseXIpDQpsaWJyYXJ5KExhaG1hbikNCmxpYnJhcnkocnZlc3QpDQpsaWJyYXJ5KG1ldGhvZHMpDQpsaWJyYXJ5KHJlYWRyKQ0KbGlicmFyeShycGFydCkNCmxpYnJhcnkoUk9DUikNCmxpYnJhcnkoTkhBTkVTKQ0KbGlicmFyeSh0aWR5cikNCg0KDQpgYGANCg0KIyBMb2FkaW5nIERhdGENCg0KYGBge3J9DQpDaXRpZXNQb3B1bGF0aW9uUmF3IDwtIA0KICByZWFkLmNzdihmaWxlID0gIkNpdGllc1BvcHVsYXRpb24uY3N2IiwgaGVhZGVyID0gVFJVRSwgc2VwID0gIiwiKQ0KQ2l0aWVzRWNvbm9teVJhdyA8LSANCiAgcmVhZC5jc3YoZmlsZSA9ICJDaXRpZXNFY29ub215LmNzdiIsIGhlYWRlciA9IFRSVUUsIHNlcCA9ICIsIikNCkNpdGllc0luY29tZURpc3RyaWJ1dGlvblJhdyA8LSANCiAgcmVhZC5jc3YoZmlsZSA9ICJDaXRpZXNJbmNvbWVEaXN0cmlidXRpb24uY3N2IiwgaGVhZGVyID0gVFJVRSwgc2VwID0gIiwiKQ0KQ2l0aWVzRW52aXJvbm1lbnRSYXcgPC0gDQogIHJlYWQuY3N2KGZpbGUgPSAiQ2l0aWVzRW52aXJvbm1lbnQuY3N2IiwgaGVhZGVyID0gVFJVRSwgc2VwID0gIiwiKQ0KSGFwcHlDaXRpZXNSYXcgPC0gDQogIHJlYWQuY3N2KGZpbGUgPSAiSGFwcHlDaXRpZXMuY3N2IiwgaGVhZGVyID0gVFJVRSwgc2VwID0gIiwiKQ0KYGBgDQoNCg==</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogJ0ZpbmFsIFByb2plY3QnDQphdXRob3I6ICJWaW5jZSBCaXJjaCAmIFN0ZXBoZW4gUG9sYWNoZWNrIg0KZGF0ZTogJ0R1ZTogTWF5IDEnDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQojIEZyb250IG1hdHRlcg0KDQpgYGB7ciBlY2hvPVRSVUUsIG1lc3NhZ2U9RkFMU0V9DQojIGFsd2F5cyBjbGVhbiB1cCBSIGVudmlyb25tZW50DQpybShsaXN0ID0gbHMoKSkNCg0KIyBsb2FkIGFsbCBwYWNrYWdlcyBoZXJlDQpsaWJyYXJ5KG1kc3IpDQpsaWJyYXJ5KHRpZHl2ZXJzZSkNCmxpYnJhcnkobHVicmlkYXRlKQ0KbGlicmFyeShtb3NhaWMpDQpsaWJyYXJ5KEhtaXNjKQ0KbGlicmFyeShkcGx5cikNCmxpYnJhcnkoTGFobWFuKQ0KbGlicmFyeShydmVzdCkNCmxpYnJhcnkobWV0aG9kcykNCmxpYnJhcnkocmVhZHIpDQpsaWJyYXJ5KHJwYXJ0KQ0KbGlicmFyeShST0NSKQ0KbGlicmFyeShOSEFORVMpDQpsaWJyYXJ5KHRpZHlyKQ0KDQoNCmBgYA0KDQojIExvYWRpbmcgRGF0YQ0KDQpgYGB7cn0NCkNpdGllc1BvcHVsYXRpb25SYXcgPC0gDQogIHJlYWQuY3N2KGZpbGUgPSAiQ2l0aWVzUG9wdWxhdGlvbi5jc3YiLCBoZWFkZXIgPSBUUlVFLCBzZXAgPSAiLCIpDQpDaXRpZXNFY29ub215UmF3IDwtIA0KICByZWFkLmNzdihmaWxlID0gIkNpdGllc0Vjb25vbXkuY3N2IiwgaGVhZGVyID0gVFJVRSwgc2VwID0gIiwiKQ0KQ2l0aWVzSW5jb21lRGlzdHJpYnV0aW9uUmF3IDwtIA0KICByZWFkLmNzdihmaWxlID0gIkNpdGllc0luY29tZURpc3RyaWJ1dGlvbi5jc3YiLCBoZWFkZXIgPSBUUlVFLCBzZXAgPSAiLCIpDQpDaXRpZXNFbnZpcm9ubWVudFJhdyA8LSANCiAgcmVhZC5jc3YoZmlsZSA9ICJDaXRpZXNFbnZpcm9ubWVudC5jc3YiLCBoZWFkZXIgPSBUUlVFLCBzZXAgPSAiLCIpDQpIYXBweUNpdGllc1JhdyA8LSANCiAgcmVhZC5jc3YoZmlsZSA9ICJIYXBweUNpdGllcy5jc3YiLCBoZWFkZXIgPSBUUlVFLCBzZXAgPSAiLCIpDQpgYGANCg0K</div>
 
 
 

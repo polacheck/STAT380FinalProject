@@ -1,6 +1,6 @@
 ---
 title: 'Final Project'
-author: "Vince Birch"
+author: "Vince Birch & Stephen Polacheck"
 date: 'Due: May 1'
 output: html_notebook
 ---
