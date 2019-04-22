@@ -43,5 +43,7 @@ CitiesEnvironmentRaw <-
   read.csv(file = "CitiesEnvironment.csv", header = TRUE, sep = ",")
 HappyCitiesRaw <- 
   read.csv(file = "HappyCities.csv", header = TRUE, sep = ",")
+NFLTeamData <-
+  read.csv(file = "NFL Team Data.csv", header = TRUE, sep = ",")
 ```
 
