@@ -50,7 +50,9 @@ NFLTeamDataRaw <-
   read.csv(file = "NFL Team Data.csv", header = TRUE, sep = ",")
 MLBTeamDataRaw <-
   read.csv(file = "MLBWinning.csv", header = TRUE, sep = ",")
+```
 
+```{r}
 colnames(CitiesPopulationRaw)[1] <- "Country_Code"
 colnames(CitiesPopulationRaw)[2] <- "City_Name"
 CitiesPopulation <-
@@ -59,7 +61,9 @@ CitiesPopulation <-
 colnames(CitiesPopulation)[4] <- "Population"
 CitiesPopulation %>%
   head()
+```
 
+```{r}
 colnames(CitiesEconomyRaw)[1] <- "Country_Code"
 colnames(CitiesEconomyRaw)[2] <- "City_Name"
 CitiesEconomy <-
@@ -68,7 +72,9 @@ CitiesEconomy <-
 colnames(CitiesEconomy)[4] <- "GDP"
 CitiesEconomy %>%
   head()
+```
 
+```{r}
 colnames(CitiesIncomeDistributionRaw)[1] <- "Country_Code"
 colnames(CitiesIncomeDistributionRaw)[2] <- "City_Name"
 CitiesIncomeDistribution <-
@@ -77,10 +83,9 @@ CitiesIncomeDistribution <-
 colnames(CitiesIncomeDistribution)[4] <- "IncomeDistribution"
 CitiesIncomeDistribution %>%
   head()
-#head(CitiesEnvironmentRaw)
+```
 
-
-
+```{r}
 colnames(CitiesEnvironmentRaw)[1] <- "Country_Code"
 colnames(CitiesEnvironmentRaw)[2] <- "City_Name"
 CitiesEnvironment <-
@@ -89,8 +94,9 @@ CitiesEnvironment <-
 colnames(CitiesEnvironment)[4] <- "SPEX_10"
 CitiesEnvironment %>%
   head()
+```
 
-head(HappyCitiesRaw)
+```{r}
 colnames(HappyCitiesRaw)[1] <- "Rank"
 colnames(HappyCitiesRaw)[2] <- "City"
 colnames(HappyCitiesRaw)[3] <- "Total_Score"
@@ -100,7 +106,10 @@ colnames(HappyCitiesRaw)[6] <- "Community_Environment_Rank"
 HappyCities <-
   HappyCitiesRaw %>%
   select(-Rank)
+head(HappyCitiesRaw)
+```
 
+```{r}
 head(NFLTeamDataRaw)
 colnames(NFLTeamDataRaw)[1] <- "Year"
 colnames(NFLTeamDataRaw)[3] <- "Team"
@@ -113,18 +122,18 @@ NFLTeamData <-
   mutate(Year = as.numeric(Year),
          Wins = as.numeric(Wins),
          Losses = as.numeric(Losses),
-         Ties = as.numeric(Ties))
+         Ties = as.numeric(Ties),
+         Win_Percent = Wins / (Wins + Losses + Ties)) %>%
+  filter(Year >= 2000)
 head(NFLTeamData)
-
-MLBTeamDataRaw
+```
+```{r}
 MLBTeamWinningPercentage <-
   MLBTeamDataRaw %>%
   select(X, X2018, X2017, X2016, X2015, X2014, X2013, X2012, X2011, X2010,
          X2009, X2008, X2007, X2006, X2005, X2004, X2003, X2002, X2001, X2000)
-
-
-
-head(MLBTeamWinningPercentage, 20)
-
+colnames(MLBTeamWinningPercentage)[1] <- "Teams"
+MLBTeamWinningPercentage %>%
+  head()
 ```
 
