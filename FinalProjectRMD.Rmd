@@ -26,7 +26,10 @@ library(rpart)
 library(ROCR)
 library(NHANES)
 library(tidyr)
-
+library(DataComputing)
+library(mosaicData)
+library(tidyverse)
+library(party)
 
 ```
 
@@ -106,12 +109,22 @@ colnames(NFLTeamDataRaw)[5] <- "Losses"
 colnames(NFLTeamDataRaw)[6] <- "Ties"
 NFLTeamData <-
   NFLTeamDataRaw %>%
-  select(Year, Team, Wins, Losses, Ties)
+  select(Year, Team, Wins, Losses, Ties) %>%
+  mutate(Year = as.numeric(Year),
+         Wins = as.numeric(Wins),
+         Losses = as.numeric(Losses),
+         Ties = as.numeric(Ties))
 head(NFLTeamData)
 
+MLBTeamDataRaw
+MLBTeamWinningPercentage <-
+  MLBTeamDataRaw %>%
+  select(X, X2018, X2017, X2016, X2015, X2014, X2013, X2012, X2011, X2010,
+         X2009, X2008, X2007, X2006, X2005, X2004, X2003, X2002, X2001, X2000)
 
-head(MLBTeamDataRaw)
 
+
+head(MLBTeamWinningPercentage, 20)
 
 ```
 
