@@ -45,8 +45,73 @@ HappyCitiesRaw <-
   read.csv(file = "HappyCities.csv", header = TRUE, sep = ",")
 NFLTeamDataRaw <-
   read.csv(file = "NFL Team Data.csv", header = TRUE, sep = ",")
-MLBTeamData <-
+MLBTeamDataRaw <-
   read.csv(file = "MLBWinning.csv", header = TRUE, sep = ",")
+
+colnames(CitiesPopulationRaw)[1] <- "Country_Code"
+colnames(CitiesPopulationRaw)[2] <- "City_Name"
+CitiesPopulation <-
+  CitiesPopulationRaw %>%
+  select(Year, City_Name, Country_Code, Value)
+colnames(CitiesPopulation)[4] <- "Population"
+CitiesPopulation %>%
+  head()
+
+colnames(CitiesEconomyRaw)[1] <- "Country_Code"
+colnames(CitiesEconomyRaw)[2] <- "City_Name"
+CitiesEconomy <-
+  CitiesEconomyRaw %>%
+  select(Year, City_Name, Country_Code, Value)
+colnames(CitiesEconomy)[4] <- "GDP"
+CitiesEconomy %>%
+  head()
+
+colnames(CitiesIncomeDistributionRaw)[1] <- "Country_Code"
+colnames(CitiesIncomeDistributionRaw)[2] <- "City_Name"
+CitiesIncomeDistribution <-
+  CitiesIncomeDistributionRaw %>%
+  select(Year, City_Name, Country_Code, Value)
+colnames(CitiesIncomeDistribution)[4] <- "IncomeDistribution"
+CitiesIncomeDistribution %>%
+  head()
+#head(CitiesEnvironmentRaw)
+
+
+
+colnames(CitiesEnvironmentRaw)[1] <- "Country_Code"
+colnames(CitiesEnvironmentRaw)[2] <- "City_Name"
+CitiesEnvironment <-
+  CitiesEnvironmentRaw %>%
+  select(Year, City_Name, Country_Code, Value)
+colnames(CitiesEnvironment)[4] <- "SPEX_10"
+CitiesEnvironment %>%
+  head()
+
+head(HappyCitiesRaw)
+colnames(HappyCitiesRaw)[1] <- "Rank"
+colnames(HappyCitiesRaw)[2] <- "City"
+colnames(HappyCitiesRaw)[3] <- "Total_Score"
+colnames(HappyCitiesRaw)[4] <- "Emotional_Physical_WellBeing_Rank"
+colnames(HappyCitiesRaw)[5] <- "Income_Employment_rank"
+colnames(HappyCitiesRaw)[6] <- "Community_Environment_Rank"
+HappyCities <-
+  HappyCitiesRaw %>%
+  select(-Rank)
+
+head(NFLTeamDataRaw)
+colnames(NFLTeamDataRaw)[1] <- "Year"
+colnames(NFLTeamDataRaw)[3] <- "Team"
+colnames(NFLTeamDataRaw)[4] <- "Wins"
+colnames(NFLTeamDataRaw)[5] <- "Losses"
+colnames(NFLTeamDataRaw)[6] <- "Ties"
+NFLTeamData <-
+  NFLTeamDataRaw %>%
+  select(Year, Team, Wins, Losses, Ties)
+head(NFLTeamData)
+
+
+head(MLBTeamDataRaw)
+
 
 ```
 
