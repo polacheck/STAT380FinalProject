@@ -1,0 +1,571 @@
+Year,Team,City,GP,W,L,OTL,PTS,WPCT
+2018,Nashville Predators,Nashville,82,53,18,11,117,0.713414634
+2019,Tampa Bay Lightning,Tampa,82,62,16,4,128,0.780487805
+2019,Anaheim Ducks,Los Angeles,82,35,37,10,80,0.487804878
+2018,Anaheim Ducks,Los Angeles,82,44,25,13,101,0.615853659
+2017,Anaheim Ducks,Los Angeles,82,46,23,13,105,0.640243902
+2016,Anaheim Ducks,Los Angeles,82,46,25,11,103,0.62804878
+2015,Anaheim Ducks,Los Angeles,82,51,24,7,109,0.664634146
+2014,Anaheim Ducks,Los Angeles,82,54,20,8,116,0.707317073
+2013,Anaheim Ducks,Los Angeles,48,30,12,6,66,0.6875
+2012,Anaheim Ducks,Los Angeles,82,34,36,12,80,0.487804878
+2011,Anaheim Ducks,Los Angeles,82,47,30,5,99,0.603658537
+2010,Anaheim Ducks,Los Angeles,82,39,32,11,89,0.542682927
+2009,Anaheim Ducks,Los Angeles,82,42,33,7,91,0.554878049
+2008,Anaheim Ducks,Los Angeles,82,47,27,8,102,0.62195122
+2007,Anaheim Ducks,Los Angeles,82,48,20,14,110,0.670731707
+2006,Anaheim Ducks,Los Angeles,82,43,27,12,98,0.597560976
+2004,Anaheim Ducks,Los Angeles,82,29,35,10,68,0.414634146
+2003,Anaheim Ducks,Los Angeles,82,40,27,9,89,0.542682927
+2002,Anaheim Ducks,Los Angeles,82,29,42,8,66,0.402439024
+2001,Anaheim Ducks,Los Angeles,82,25,41,11,61,0.37195122
+2000,Anaheim Ducks,Los Angeles,82,34,33,12,80,0.487804878
+2019,Arizona Coyotes,Phoenix,82,39,35,8,86,0.524390244
+2018,Arizona Coyotes,Phoenix,82,29,41,12,70,0.426829268
+2017,Arizona Coyotes,Phoenix,82,30,42,10,70,0.426829268
+2016,Arizona Coyotes,Phoenix,82,35,39,8,78,0.475609756
+2015,Arizona Coyotes,Phoenix,82,24,50,8,56,0.341463415
+2011,Atlanta Thrashers,Atlanta,82,34,36,12,80,0.487804878
+2010,Atlanta Thrashers,Atlanta,82,35,34,13,83,0.506097561
+2009,Atlanta Thrashers,Atlanta,82,35,41,6,76,0.463414634
+2008,Atlanta Thrashers,Atlanta,82,34,40,8,76,0.463414634
+2007,Atlanta Thrashers,Atlanta,82,43,28,11,97,0.591463415
+2006,Atlanta Thrashers,Atlanta,82,41,33,8,90,0.548780488
+2004,Atlanta Thrashers,Atlanta,82,33,37,8,74,0.451219512
+2003,Atlanta Thrashers,Atlanta,82,31,39,7,69,0.420731707
+2002,Atlanta Thrashers,Atlanta,82,19,47,11,49,0.298780488
+2001,Atlanta Thrashers,Atlanta,82,23,45,12,58,0.353658537
+2000,Atlanta Thrashers,Atlanta,82,14,57,7,35,0.213414634
+2019,Boston Bruins,Boston,82,49,24,9,107,0.652439024
+2018,Boston Bruins,Boston,82,50,20,12,112,0.682926829
+2017,Boston Bruins,Boston,82,44,31,7,95,0.579268293
+2016,Boston Bruins,Boston,82,42,31,9,93,0.567073171
+2015,Boston Bruins,Boston,82,41,27,14,96,0.585365854
+2014,Boston Bruins,Boston,82,54,19,9,117,0.713414634
+2013,Boston Bruins,Boston,48,28,14,6,62,0.645833333
+2012,Boston Bruins,Boston,82,49,29,4,102,0.62195122
+2011,Boston Bruins,Boston,82,46,25,11,103,0.62804878
+2010,Boston Bruins,Boston,82,39,30,13,91,0.554878049
+2009,Boston Bruins,Boston,82,53,19,10,116,0.707317073
+2008,Boston Bruins,Boston,82,41,29,12,94,0.573170732
+2007,Boston Bruins,Boston,82,35,41,6,76,0.463414634
+2006,Boston Bruins,Boston,82,29,37,16,74,0.451219512
+2004,Boston Bruins,Boston,82,41,19,15,97,0.591463415
+2003,Boston Bruins,Boston,82,36,31,11,83,0.506097561
+2002,Boston Bruins,Boston,82,43,24,6,92,0.56097561
+2001,Boston Bruins,Boston,82,36,30,8,80,0.487804878
+2000,Boston Bruins,Boston,82,24,33,19,67,0.408536585
+2019,Buffalo Sabres,Buffalo,82,33,39,10,76,0.463414634
+2018,Buffalo Sabres,Buffalo,82,25,45,12,62,0.37804878
+2017,Buffalo Sabres,Buffalo,82,33,37,12,78,0.475609756
+2016,Buffalo Sabres,Buffalo,82,35,36,11,81,0.493902439
+2015,Buffalo Sabres,Buffalo,82,23,51,8,54,0.329268293
+2014,Buffalo Sabres,Buffalo,82,21,51,10,52,0.317073171
+2013,Buffalo Sabres,Buffalo,48,21,21,6,48,0.5
+2012,Buffalo Sabres,Buffalo,82,39,32,11,89,0.542682927
+2011,Buffalo Sabres,Buffalo,82,43,29,10,96,0.585365854
+2010,Buffalo Sabres,Buffalo,82,45,27,10,100,0.609756098
+2009,Buffalo Sabres,Buffalo,82,41,32,9,91,0.554878049
+2008,Buffalo Sabres,Buffalo,82,39,31,12,90,0.548780488
+2007,Buffalo Sabres,Buffalo,82,53,22,7,113,0.68902439
+2006,Buffalo Sabres,Buffalo,82,52,24,6,110,0.670731707
+2004,Buffalo Sabres,Buffalo,82,37,34,7,81,0.493902439
+2003,Buffalo Sabres,Buffalo,82,27,37,10,64,0.390243902
+2002,Buffalo Sabres,Buffalo,82,35,35,11,81,0.493902439
+2001,Buffalo Sabres,Buffalo,82,46,30,5,97,0.591463415
+2000,Buffalo Sabres,Buffalo,82,35,32,11,81,0.493902439
+2019,Calgary Flames,Calgary,82,50,25,7,107,0.652439024
+2018,Calgary Flames,Calgary,82,37,35,10,84,0.512195122
+2017,Calgary Flames,Calgary,82,45,33,4,94,0.573170732
+2016,Calgary Flames,Calgary,82,35,40,7,77,0.469512195
+2015,Calgary Flames,Calgary,82,45,30,7,97,0.591463415
+2014,Calgary Flames,Calgary,82,35,40,7,77,0.469512195
+2013,Calgary Flames,Calgary,48,19,25,4,42,0.4375
+2012,Calgary Flames,Calgary,82,37,29,16,90,0.548780488
+2011,Calgary Flames,Calgary,82,41,29,12,94,0.573170732
+2010,Calgary Flames,Calgary,82,40,32,10,90,0.548780488
+2009,Calgary Flames,Calgary,82,46,30,6,98,0.597560976
+2008,Calgary Flames,Calgary,82,42,30,10,94,0.573170732
+2007,Calgary Flames,Calgary,82,43,29,10,96,0.585365854
+2006,Calgary Flames,Calgary,82,46,25,11,103,0.62804878
+2004,Calgary Flames,Calgary,82,42,30,7,91,0.554878049
+2003,Calgary Flames,Calgary,82,29,36,13,71,0.432926829
+2002,Calgary Flames,Calgary,82,32,35,12,76,0.463414634
+2001,Calgary Flames,Calgary,82,27,36,15,69,0.420731707
+2000,Calgary Flames,Calgary,82,31,36,10,72,0.43902439
+2019,Carolina Hurricanes,Raleigh,82,46,29,7,99,0.603658537
+2018,Carolina Hurricanes,Raleigh,82,36,35,11,83,0.506097561
+2017,Carolina Hurricanes,Raleigh,82,36,31,15,87,0.530487805
+2016,Carolina Hurricanes,Raleigh,82,35,31,16,86,0.524390244
+2015,Carolina Hurricanes,Raleigh,82,30,41,11,71,0.432926829
+2014,Carolina Hurricanes,Raleigh,82,36,35,11,83,0.506097561
+2013,Carolina Hurricanes,Raleigh,48,19,25,4,42,0.4375
+2012,Carolina Hurricanes,Raleigh,82,33,33,16,82,0.5
+2011,Carolina Hurricanes,Raleigh,82,40,31,11,91,0.554878049
+2010,Carolina Hurricanes,Raleigh,82,35,37,10,80,0.487804878
+2009,Carolina Hurricanes,Raleigh,82,45,30,7,97,0.591463415
+2008,Carolina Hurricanes,Raleigh,82,43,33,6,92,0.56097561
+2007,Carolina Hurricanes,Raleigh,82,40,34,8,88,0.536585366
+2006,Carolina Hurricanes,Raleigh,82,52,22,8,112,0.682926829
+2004,Carolina Hurricanes,Raleigh,82,28,34,14,70,0.426829268
+2003,Carolina Hurricanes,Raleigh,82,22,43,11,55,0.335365854
+2002,Carolina Hurricanes,Raleigh,82,35,26,16,86,0.524390244
+2001,Carolina Hurricanes,Raleigh,82,38,32,9,85,0.518292683
+2000,Carolina Hurricanes,Raleigh,82,37,35,10,84,0.512195122
+2019,Chicago Blackhawks,Chicago,82,36,34,12,84,0.512195122
+2018,Chicago Blackhawks,Chicago,82,33,39,10,76,0.463414634
+2017,Chicago Blackhawks,Chicago,82,50,23,9,109,0.664634146
+2016,Chicago Blackhawks,Chicago,82,47,26,9,103,0.62804878
+2015,Chicago Blackhawks,Chicago,82,48,28,6,102,0.62195122
+2014,Chicago Blackhawks,Chicago,82,46,21,15,107,0.652439024
+2013,Chicago Blackhawks,Chicago,48,36,7,5,77,0.802083333
+2012,Chicago Blackhawks,Chicago,82,45,26,11,101,0.615853659
+2011,Chicago Blackhawks,Chicago,82,44,29,9,97,0.591463415
+2010,Chicago Blackhawks,Chicago,82,52,22,8,112,0.682926829
+2009,Chicago Blackhawks,Chicago,82,46,24,12,104,0.634146341
+2008,Chicago Blackhawks,Chicago,82,40,34,8,88,0.536585366
+2007,Chicago Blackhawks,Chicago,82,31,42,9,71,0.432926829
+2006,Chicago Blackhawks,Chicago,82,26,43,13,65,0.396341463
+2004,Chicago Blackhawks,Chicago,82,20,43,11,51,0.31097561
+2003,Chicago Blackhawks,Chicago,82,30,33,13,73,0.445121951
+2002,Chicago Blackhawks,Chicago,82,41,27,13,95,0.579268293
+2001,Chicago Blackhawks,Chicago,82,29,40,8,66,0.402439024
+2000,Chicago Blackhawks,Chicago,82,33,37,10,76,0.463414634
+2019,Colorado Avalanche,Denver,82,38,30,14,90,0.548780488
+2018,Colorado Avalanche,Denver,82,43,30,9,95,0.579268293
+2017,Colorado Avalanche,Denver,82,22,56,4,48,0.292682927
+2016,Colorado Avalanche,Denver,82,39,39,4,82,0.5
+2015,Colorado Avalanche,Denver,82,39,31,12,90,0.548780488
+2014,Colorado Avalanche,Denver,82,52,22,8,112,0.682926829
+2013,Colorado Avalanche,Denver,48,16,25,7,39,0.40625
+2012,Colorado Avalanche,Denver,82,41,35,6,88,0.536585366
+2011,Colorado Avalanche,Denver,82,30,44,8,68,0.414634146
+2010,Colorado Avalanche,Denver,82,43,30,9,95,0.579268293
+2009,Colorado Avalanche,Denver,82,32,45,5,69,0.420731707
+2008,Colorado Avalanche,Denver,82,44,31,7,95,0.579268293
+2007,Colorado Avalanche,Denver,82,44,31,7,95,0.579268293
+2006,Colorado Avalanche,Denver,82,43,30,9,95,0.579268293
+2004,Colorado Avalanche,Denver,82,40,22,13,93,0.567073171
+2003,Colorado Avalanche,Denver,82,42,19,13,97,0.591463415
+2002,Colorado Avalanche,Denver,82,45,28,8,98,0.597560976
+2001,Colorado Avalanche,Denver,82,52,16,10,114,0.695121951
+2000,Colorado Avalanche,Denver,82,42,28,11,95,0.579268293
+2019,Columbus Blue Jackets,Columbus,82,47,31,4,98,0.597560976
+2018,Columbus Blue Jackets,Columbus,82,45,30,7,97,0.591463415
+2017,Columbus Blue Jackets,Columbus,82,50,24,8,108,0.658536585
+2016,Columbus Blue Jackets,Columbus,82,34,40,8,76,0.463414634
+2015,Columbus Blue Jackets,Columbus,82,42,35,5,89,0.542682927
+2014,Columbus Blue Jackets,Columbus,82,43,32,7,93,0.567073171
+2013,Columbus Blue Jackets,Columbus,48,24,17,7,55,0.572916667
+2012,Columbus Blue Jackets,Columbus,82,29,46,7,65,0.396341463
+2011,Columbus Blue Jackets,Columbus,82,34,35,13,81,0.493902439
+2010,Columbus Blue Jackets,Columbus,82,32,35,15,79,0.481707317
+2009,Columbus Blue Jackets,Columbus,82,41,31,10,92,0.56097561
+2008,Columbus Blue Jackets,Columbus,82,34,36,12,80,0.487804878
+2007,Columbus Blue Jackets,Columbus,82,33,42,7,73,0.445121951
+2006,Columbus Blue Jackets,Columbus,82,35,43,4,74,0.451219512
+2004,Columbus Blue Jackets,Columbus,82,25,45,8,58,0.353658537
+2003,Columbus Blue Jackets,Columbus,82,29,42,8,66,0.402439024
+2002,Columbus Blue Jackets,Columbus,82,22,47,8,52,0.317073171
+2001,Columbus Blue Jackets,Columbus,82,28,39,9,65,0.396341463
+2019,Dallas Stars,Dallas,82,43,32,7,93,0.567073171
+2018,Dallas Stars,Dallas,82,42,32,8,92,0.56097561
+2017,Dallas Stars,Dallas,82,34,37,11,79,0.481707317
+2016,Dallas Stars,Dallas,82,50,23,9,109,0.664634146
+2015,Dallas Stars,Dallas,82,41,31,10,92,0.56097561
+2014,Dallas Stars,Dallas,82,40,31,11,91,0.554878049
+2013,Dallas Stars,Dallas,48,22,22,4,48,0.5
+2012,Dallas Stars,Dallas,82,42,35,5,89,0.542682927
+2011,Dallas Stars,Dallas,82,42,29,11,95,0.579268293
+2010,Dallas Stars,Dallas,82,37,31,14,88,0.536585366
+2009,Dallas Stars,Dallas,82,36,35,11,83,0.506097561
+2008,Dallas Stars,Dallas,82,45,30,7,97,0.591463415
+2007,Dallas Stars,Dallas,82,50,25,7,107,0.652439024
+2006,Dallas Stars,Dallas,82,53,23,6,112,0.682926829
+2004,Dallas Stars,Dallas,82,41,26,13,95,0.579268293
+2003,Dallas Stars,Dallas,82,46,17,15,107,0.652439024
+2002,Dallas Stars,Dallas,82,36,28,13,85,0.518292683
+2001,Dallas Stars,Dallas,82,48,24,8,104,0.634146341
+2000,Dallas Stars,Dallas,82,43,23,10,96,0.585365854
+2019,Detroit Red Wings,Detroit,82,32,40,10,74,0.451219512
+2018,Detroit Red Wings,Detroit,82,30,39,13,73,0.445121951
+2017,Detroit Red Wings,Detroit,82,33,36,13,79,0.481707317
+2016,Detroit Red Wings,Detroit,82,41,30,11,93,0.567073171
+2015,Detroit Red Wings,Detroit,82,43,25,14,100,0.609756098
+2014,Detroit Red Wings,Detroit,82,39,28,15,93,0.567073171
+2013,Detroit Red Wings,Detroit,48,24,16,8,56,0.583333333
+2012,Detroit Red Wings,Detroit,82,48,28,6,102,0.62195122
+2011,Detroit Red Wings,Detroit,82,47,25,10,104,0.634146341
+2010,Detroit Red Wings,Detroit,82,44,24,14,102,0.62195122
+2009,Detroit Red Wings,Detroit,82,51,21,10,112,0.682926829
+2008,Detroit Red Wings,Detroit,82,54,21,7,115,0.701219512
+2007,Detroit Red Wings,Detroit,82,50,19,13,113,0.68902439
+2006,Detroit Red Wings,Detroit,82,58,16,8,124,0.756097561
+2004,Detroit Red Wings,Detroit,82,48,21,11,107,0.652439024
+2003,Detroit Red Wings,Detroit,82,48,20,10,106,0.646341463
+2002,Detroit Red Wings,Detroit,82,51,17,10,112,0.682926829
+2001,Detroit Red Wings,Detroit,82,49,20,9,107,0.652439024
+2000,Detroit Red Wings,Detroit,82,48,22,10,106,0.646341463
+2019,Edmonton Oilers,Edmonton,82,35,38,9,79,0.481707317
+2018,Edmonton Oilers,Edmonton,82,36,40,6,78,0.475609756
+2017,Edmonton Oilers,Edmonton,82,47,26,9,103,0.62804878
+2016,Edmonton Oilers,Edmonton,82,31,43,8,70,0.426829268
+2015,Edmonton Oilers,Edmonton,82,24,44,14,62,0.37804878
+2014,Edmonton Oilers,Edmonton,82,29,44,9,67,0.408536585
+2013,Edmonton Oilers,Edmonton,48,19,22,7,45,0.46875
+2012,Edmonton Oilers,Edmonton,82,32,40,10,74,0.451219512
+2011,Edmonton Oilers,Edmonton,82,25,45,12,62,0.37804878
+2010,Edmonton Oilers,Edmonton,82,27,47,8,62,0.37804878
+2009,Edmonton Oilers,Edmonton,82,38,35,9,85,0.518292683
+2008,Edmonton Oilers,Edmonton,82,41,35,6,88,0.536585366
+2007,Edmonton Oilers,Edmonton,82,32,43,7,71,0.432926829
+2006,Edmonton Oilers,Edmonton,82,41,28,13,95,0.579268293
+2004,Edmonton Oilers,Edmonton,82,36,29,12,84,0.512195122
+2003,Edmonton Oilers,Edmonton,82,36,26,11,83,0.506097561
+2002,Edmonton Oilers,Edmonton,82,38,28,12,88,0.536585366
+2001,Edmonton Oilers,Edmonton,82,39,28,12,90,0.548780488
+2000,Edmonton Oilers,Edmonton,82,32,26,16,80,0.487804878
+2019,Florida Panthers,Miami,82,36,32,14,86,0.524390244
+2018,Florida Panthers,Miami,82,44,30,8,96,0.585365854
+2017,Florida Panthers,Miami,82,35,36,11,81,0.493902439
+2016,Florida Panthers,Miami,82,47,26,9,103,0.62804878
+2015,Florida Panthers,Miami,82,38,29,15,91,0.554878049
+2014,Florida Panthers,Miami,82,29,45,8,66,0.402439024
+2013,Florida Panthers,Miami,48,15,27,6,36,0.375
+2012,Florida Panthers,Miami,82,38,26,18,94,0.573170732
+2011,Florida Panthers,Miami,82,30,40,12,72,0.43902439
+2010,Florida Panthers,Miami,82,32,37,13,77,0.469512195
+2009,Florida Panthers,Miami,82,41,30,11,93,0.567073171
+2008,Florida Panthers,Miami,82,38,35,9,85,0.518292683
+2007,Florida Panthers,Miami,82,35,31,16,86,0.524390244
+2006,Florida Panthers,Miami,82,37,34,11,85,0.518292683
+2004,Florida Panthers,Miami,82,28,35,15,71,0.432926829
+2003,Florida Panthers,Miami,82,24,36,13,61,0.37195122
+2002,Florida Panthers,Miami,82,22,44,10,54,0.329268293
+2001,Florida Panthers,Miami,82,22,38,13,57,0.347560976
+2000,Florida Panthers,Miami,82,43,27,6,92,0.56097561
+2019,Los Angeles Kings,Los Angeles,82,31,42,9,71,0.432926829
+2018,Los Angeles Kings,Los Angeles,82,45,29,8,98,0.597560976
+2017,Los Angeles Kings,Los Angeles,82,39,35,8,86,0.524390244
+2016,Los Angeles Kings,Los Angeles,82,48,28,6,102,0.62195122
+2015,Los Angeles Kings,Los Angeles,82,40,27,15,95,0.579268293
+2014,Los Angeles Kings,Los Angeles,82,46,28,8,100,0.609756098
+2013,Los Angeles Kings,Los Angeles,48,27,16,5,59,0.614583333
+2012,Los Angeles Kings,Los Angeles,82,40,27,15,95,0.579268293
+2011,Los Angeles Kings,Los Angeles,82,46,30,6,98,0.597560976
+2010,Los Angeles Kings,Los Angeles,82,46,27,9,101,0.615853659
+2009,Los Angeles Kings,Los Angeles,82,34,37,11,79,0.481707317
+2008,Los Angeles Kings,Los Angeles,82,32,43,7,71,0.432926829
+2007,Los Angeles Kings,Los Angeles,82,27,41,14,68,0.414634146
+2006,Los Angeles Kings,Los Angeles,82,42,35,5,89,0.542682927
+2004,Los Angeles Kings,Los Angeles,82,28,29,16,72,0.43902439
+2003,Los Angeles Kings,Los Angeles,82,33,36,6,72,0.43902439
+2002,Los Angeles Kings,Los Angeles,82,40,27,11,91,0.554878049
+2001,Los Angeles Kings,Los Angeles,82,38,28,13,89,0.542682927
+2000,Los Angeles Kings,Los Angeles,82,39,27,12,90,0.548780488
+2019,Minnesota Wild,Minneapolis,82,37,36,9,83,0.506097561
+2018,Minnesota Wild,Minneapolis,82,45,26,11,101,0.615853659
+2017,Minnesota Wild,Minneapolis,82,49,25,8,106,0.646341463
+2016,Minnesota Wild,Minneapolis,82,38,33,11,87,0.530487805
+2015,Minnesota Wild,Minneapolis,82,46,28,8,100,0.609756098
+2014,Minnesota Wild,Minneapolis,82,43,27,12,98,0.597560976
+2013,Minnesota Wild,Minneapolis,48,26,19,3,55,0.572916667
+2012,Minnesota Wild,Minneapolis,82,35,36,11,81,0.493902439
+2011,Minnesota Wild,Minneapolis,82,39,35,8,86,0.524390244
+2010,Minnesota Wild,Minneapolis,82,38,36,8,84,0.512195122
+2009,Minnesota Wild,Minneapolis,82,40,33,9,89,0.542682927
+2008,Minnesota Wild,Minneapolis,82,44,28,10,98,0.597560976
+2007,Minnesota Wild,Minneapolis,82,48,26,8,104,0.634146341
+2006,Minnesota Wild,Minneapolis,82,38,36,8,84,0.512195122
+2004,Minnesota Wild,Minneapolis,82,30,29,20,80,0.487804878
+2003,Minnesota Wild,Minneapolis,82,42,29,10,94,0.573170732
+2002,Minnesota Wild,Minneapolis,82,26,35,12,64,0.390243902
+2001,Minnesota Wild,Minneapolis,82,25,39,13,63,0.384146341
+2019,Montreal Canadiens,Montreal,82,44,30,8,96,0.585365854
+2018,Montreal Canadiens,Montreal,82,29,40,13,71,0.432926829
+2017,Montreal Canadiens,Montreal,82,47,26,9,103,0.62804878
+2016,Montreal Canadiens,Montreal,82,38,38,6,82,0.5
+2015,Montreal Canadiens,Montreal,82,50,22,10,110,0.670731707
+2014,Montreal Canadiens,Montreal,82,46,28,8,100,0.609756098
+2013,Montreal Canadiens,Montreal,48,29,14,5,63,0.65625
+2012,Montreal Canadiens,Montreal,82,31,35,16,78,0.475609756
+2011,Montreal Canadiens,Montreal,82,44,30,8,96,0.585365854
+2010,Montreal Canadiens,Montreal,82,39,33,10,88,0.536585366
+2009,Montreal Canadiens,Montreal,82,41,30,11,93,0.567073171
+2008,Montreal Canadiens,Montreal,82,47,25,10,104,0.634146341
+2007,Montreal Canadiens,Montreal,82,42,34,6,90,0.548780488
+2006,Montreal Canadiens,Montreal,82,42,31,9,93,0.567073171
+2004,Montreal Canadiens,Montreal,82,41,30,7,89,0.542682927
+2003,Montreal Canadiens,Montreal,82,30,35,8,68,0.414634146
+2002,Montreal Canadiens,Montreal,82,36,31,12,84,0.512195122
+2001,Montreal Canadiens,Montreal,82,28,40,8,64,0.390243902
+2000,Montreal Canadiens,Montreal,82,35,34,9,79,0.481707317
+2019,Nashville Predators,Nashville,82,47,29,6,100,0.609756098
+2017,Nashville Predators,Nashville,82,41,29,12,94,0.573170732
+2016,Nashville Predators,Nashville,82,41,27,14,96,0.585365854
+2015,Nashville Predators,Nashville,82,47,25,10,104,0.634146341
+2014,Nashville Predators,Nashville,82,38,32,12,88,0.536585366
+2013,Nashville Predators,Nashville,48,16,23,9,41,0.427083333
+2012,Nashville Predators,Nashville,82,48,26,8,104,0.634146341
+2011,Nashville Predators,Nashville,82,44,27,11,99,0.603658537
+2010,Nashville Predators,Nashville,82,47,29,6,100,0.609756098
+2009,Nashville Predators,Nashville,82,40,34,8,88,0.536585366
+2008,Nashville Predators,Nashville,82,41,32,9,91,0.554878049
+2007,Nashville Predators,Nashville,82,51,23,8,110,0.670731707
+2006,Nashville Predators,Nashville,82,49,25,8,106,0.646341463
+2004,Nashville Predators,Nashville,82,38,29,11,87,0.530487805
+2003,Nashville Predators,Nashville,82,27,35,13,67,0.408536585
+2002,Nashville Predators,Nashville,82,28,41,13,69,0.420731707
+2001,Nashville Predators,Nashville,82,34,36,9,77,0.469512195
+2000,Nashville Predators,Nashville,82,28,40,7,63,0.384146341
+2019,New Jersey Devils,East Rutherford,82,31,41,10,72,0.43902439
+2018,New Jersey Devils,East Rutherford,82,44,29,9,97,0.591463415
+2017,New Jersey Devils,East Rutherford,82,28,40,14,70,0.426829268
+2016,New Jersey Devils,East Rutherford,82,38,36,8,84,0.512195122
+2015,New Jersey Devils,East Rutherford,82,32,36,14,78,0.475609756
+2014,New Jersey Devils,East Rutherford,82,35,29,18,88,0.536585366
+2013,New Jersey Devils,East Rutherford,48,19,19,10,48,0.5
+2012,New Jersey Devils,East Rutherford,82,48,28,6,102,0.62195122
+2011,New Jersey Devils,East Rutherford,82,38,39,5,81,0.493902439
+2010,New Jersey Devils,East Rutherford,82,48,27,7,103,0.62804878
+2009,New Jersey Devils,East Rutherford,82,51,27,4,106,0.646341463
+2008,New Jersey Devils,East Rutherford,82,46,29,7,99,0.603658537
+2007,New Jersey Devils,East Rutherford,82,49,24,9,107,0.652439024
+2006,New Jersey Devils,East Rutherford,82,46,27,9,101,0.615853659
+2004,New Jersey Devils,East Rutherford,82,43,25,12,98,0.597560976
+2003,New Jersey Devils,East Rutherford,82,46,20,10,102,0.62195122
+2002,New Jersey Devils,East Rutherford,82,41,28,9,91,0.554878049
+2001,New Jersey Devils,East Rutherford,82,48,19,12,108,0.658536585
+2000,New Jersey Devils,East Rutherford,82,45,24,8,98,0.597560976
+2019,New York Islanders,New York City,82,48,27,7,103,0.62804878
+2018,New York Islanders,New York City,82,35,37,10,80,0.487804878
+2017,New York Islanders,New York City,82,41,29,12,94,0.573170732
+2016,New York Islanders,New York City,82,45,27,10,100,0.609756098
+2015,New York Islanders,New York City,82,47,28,7,101,0.615853659
+2014,New York Islanders,New York City,82,34,37,11,79,0.481707317
+2013,New York Islanders,New York City,48,24,17,7,55,0.572916667
+2012,New York Islanders,New York City,82,34,37,11,79,0.481707317
+2011,New York Islanders,New York City,82,30,39,13,73,0.445121951
+2010,New York Islanders,New York City,82,34,37,11,79,0.481707317
+2009,New York Islanders,New York City,82,26,47,9,61,0.37195122
+2008,New York Islanders,New York City,82,35,38,9,79,0.481707317
+2007,New York Islanders,New York City,82,40,30,12,92,0.56097561
+2006,New York Islanders,New York City,82,36,40,6,78,0.475609756
+2004,New York Islanders,New York City,82,38,29,11,87,0.530487805
+2003,New York Islanders,New York City,82,35,34,11,81,0.493902439
+2002,New York Islanders,New York City,82,42,28,8,92,0.56097561
+2001,New York Islanders,New York City,82,21,51,7,49,0.298780488
+2000,New York Islanders,New York City,82,24,48,9,57,0.347560976
+2019,New York Rangers,New York City,82,32,36,14,78,0.475609756
+2018,New York Rangers,New York City,82,34,39,9,77,0.469512195
+2017,New York Rangers,New York City,82,48,28,6,102,0.62195122
+2016,New York Rangers,New York City,82,46,27,9,101,0.615853659
+2015,New York Rangers,New York City,82,53,22,7,113,0.68902439
+2014,New York Rangers,New York City,82,45,31,6,96,0.585365854
+2013,New York Rangers,New York City,48,26,18,4,56,0.583333333
+2012,New York Rangers,New York City,82,51,24,7,109,0.664634146
+2011,New York Rangers,New York City,82,44,33,5,93,0.567073171
+2010,New York Rangers,New York City,82,38,33,11,87,0.530487805
+2009,New York Rangers,New York City,82,43,30,9,95,0.579268293
+2008,New York Rangers,New York City,82,42,27,13,97,0.591463415
+2007,New York Rangers,New York City,82,42,30,10,94,0.573170732
+2006,New York Rangers,New York City,82,44,26,12,100,0.609756098
+2004,New York Rangers,New York City,82,27,40,7,61,0.37195122
+2003,New York Rangers,New York City,82,32,36,10,74,0.451219512
+2002,New York Rangers,New York City,82,36,38,4,76,0.463414634
+2001,New York Rangers,New York City,82,33,43,5,71,0.432926829
+2000,New York Rangers,New York City,82,29,38,12,70,0.426829268
+2019,Ottawa Senators,Ottawa,82,29,47,6,64,0.390243902
+2018,Ottawa Senators,Ottawa,82,28,43,11,67,0.408536585
+2017,Ottawa Senators,Ottawa,82,44,28,10,98,0.597560976
+2016,Ottawa Senators,Ottawa,82,38,35,9,85,0.518292683
+2015,Ottawa Senators,Ottawa,82,43,26,13,99,0.603658537
+2014,Ottawa Senators,Ottawa,82,37,31,14,88,0.536585366
+2013,Ottawa Senators,Ottawa,48,25,17,6,56,0.583333333
+2012,Ottawa Senators,Ottawa,82,41,31,10,92,0.56097561
+2011,Ottawa Senators,Ottawa,82,32,40,10,74,0.451219512
+2010,Ottawa Senators,Ottawa,82,44,32,6,94,0.573170732
+2009,Ottawa Senators,Ottawa,82,36,35,11,83,0.506097561
+2008,Ottawa Senators,Ottawa,82,43,31,8,94,0.573170732
+2007,Ottawa Senators,Ottawa,82,48,25,9,105,0.640243902
+2006,Ottawa Senators,Ottawa,82,52,21,9,113,0.68902439
+2004,Ottawa Senators,Ottawa,82,43,23,10,96,0.585365854
+2003,Ottawa Senators,Ottawa,82,52,21,8,112,0.682926829
+2002,Ottawa Senators,Ottawa,82,39,27,9,87,0.530487805
+2001,Ottawa Senators,Ottawa,82,48,21,9,105,0.640243902
+2000,Ottawa Senators,Ottawa,82,41,28,11,93,0.567073171
+2019,Philadelphia Flyers,Philadelphia,82,37,37,8,82,0.5
+2018,Philadelphia Flyers,Philadelphia,82,42,26,14,98,0.597560976
+2017,Philadelphia Flyers,Philadelphia,82,39,33,10,88,0.536585366
+2016,Philadelphia Flyers,Philadelphia,82,41,27,14,96,0.585365854
+2015,Philadelphia Flyers,Philadelphia,82,33,31,18,84,0.512195122
+2014,Philadelphia Flyers,Philadelphia,82,42,30,10,94,0.573170732
+2013,Philadelphia Flyers,Philadelphia,48,23,22,3,49,0.510416667
+2012,Philadelphia Flyers,Philadelphia,82,47,26,9,103,0.62804878
+2011,Philadelphia Flyers,Philadelphia,82,47,23,12,106,0.646341463
+2010,Philadelphia Flyers,Philadelphia,82,41,35,6,88,0.536585366
+2009,Philadelphia Flyers,Philadelphia,82,44,27,11,99,0.603658537
+2008,Philadelphia Flyers,Philadelphia,82,42,29,11,95,0.579268293
+2007,Philadelphia Flyers,Philadelphia,82,22,48,12,56,0.341463415
+2006,Philadelphia Flyers,Philadelphia,82,45,26,11,101,0.615853659
+2004,Philadelphia Flyers,Philadelphia,82,40,21,15,95,0.579268293
+2003,Philadelphia Flyers,Philadelphia,82,45,20,13,103,0.62804878
+2002,Philadelphia Flyers,Philadelphia,82,42,27,10,94,0.573170732
+2001,Philadelphia Flyers,Philadelphia,82,43,25,11,97,0.591463415
+2000,Philadelphia Flyers,Philadelphia,82,45,22,12,102,0.62195122
+2014,Phoenix Coyotes,Phoenix,82,37,30,15,89,0.542682927
+2013,Phoenix Coyotes,Phoenix,48,21,18,9,51,0.53125
+2012,Phoenix Coyotes,Phoenix,82,42,27,13,97,0.591463415
+2011,Phoenix Coyotes,Phoenix,82,43,26,13,99,0.603658537
+2010,Phoenix Coyotes,Phoenix,82,50,25,7,107,0.652439024
+2009,Phoenix Coyotes,Phoenix,82,36,39,7,79,0.481707317
+2008,Phoenix Coyotes,Phoenix,82,38,37,7,83,0.506097561
+2007,Phoenix Coyotes,Phoenix,82,31,46,5,67,0.408536585
+2006,Phoenix Coyotes,Phoenix,82,38,39,5,81,0.493902439
+2004,Phoenix Coyotes,Phoenix,82,22,36,18,62,0.37804878
+2003,Phoenix Coyotes,Phoenix,82,31,35,11,73,0.445121951
+2002,Phoenix Coyotes,Phoenix,82,40,27,9,89,0.542682927
+2001,Phoenix Coyotes,Phoenix,82,35,27,17,87,0.530487805
+2000,Phoenix Coyotes,Phoenix,82,39,31,8,86,0.524390244
+2019,Pittsburgh Penguins,Pittsburgh,82,44,26,12,100,0.609756098
+2018,Pittsburgh Penguins,Pittsburgh,82,47,29,6,100,0.609756098
+2017,Pittsburgh Penguins,Pittsburgh,82,50,21,11,111,0.676829268
+2016,Pittsburgh Penguins,Pittsburgh,82,48,26,8,104,0.634146341
+2015,Pittsburgh Penguins,Pittsburgh,82,43,27,12,98,0.597560976
+2014,Pittsburgh Penguins,Pittsburgh,82,51,24,7,109,0.664634146
+2013,Pittsburgh Penguins,Pittsburgh,48,36,12,0,72,0.75
+2012,Pittsburgh Penguins,Pittsburgh,82,51,25,6,108,0.658536585
+2011,Pittsburgh Penguins,Pittsburgh,82,49,25,8,106,0.646341463
+2010,Pittsburgh Penguins,Pittsburgh,82,47,28,7,101,0.615853659
+2009,Pittsburgh Penguins,Pittsburgh,82,45,28,9,99,0.603658537
+2008,Pittsburgh Penguins,Pittsburgh,82,47,27,8,102,0.62195122
+2007,Pittsburgh Penguins,Pittsburgh,82,47,24,11,105,0.640243902
+2006,Pittsburgh Penguins,Pittsburgh,82,22,46,14,58,0.353658537
+2004,Pittsburgh Penguins,Pittsburgh,82,23,47,8,54,0.329268293
+2003,Pittsburgh Penguins,Pittsburgh,82,27,44,6,60,0.365853659
+2002,Pittsburgh Penguins,Pittsburgh,82,28,41,8,64,0.390243902
+2001,Pittsburgh Penguins,Pittsburgh,82,42,28,9,93,0.567073171
+2000,Pittsburgh Penguins,Pittsburgh,82,37,31,8,82,0.5
+2019,San Jose Sharks,San Jose,82,46,27,9,101,0.615853659
+2018,San Jose Sharks,San Jose,82,45,27,10,100,0.609756098
+2017,San Jose Sharks,San Jose,82,46,29,7,99,0.603658537
+2016,San Jose Sharks,San Jose,82,46,30,6,98,0.597560976
+2015,San Jose Sharks,San Jose,82,40,33,9,89,0.542682927
+2014,San Jose Sharks,San Jose,82,51,22,9,111,0.676829268
+2013,San Jose Sharks,San Jose,48,25,16,7,57,0.59375
+2012,San Jose Sharks,San Jose,82,43,29,10,96,0.585365854
+2011,San Jose Sharks,San Jose,82,48,25,9,105,0.640243902
+2010,San Jose Sharks,San Jose,82,51,20,11,113,0.68902439
+2009,San Jose Sharks,San Jose,82,53,18,11,117,0.713414634
+2008,San Jose Sharks,San Jose,82,49,23,10,108,0.658536585
+2007,San Jose Sharks,San Jose,82,51,26,5,107,0.652439024
+2006,San Jose Sharks,San Jose,82,44,27,11,99,0.603658537
+2004,San Jose Sharks,San Jose,82,43,21,12,98,0.597560976
+2003,San Jose Sharks,San Jose,82,28,37,9,65,0.396341463
+2002,San Jose Sharks,San Jose,82,44,27,8,96,0.585365854
+2001,San Jose Sharks,San Jose,82,40,27,12,92,0.56097561
+2000,San Jose Sharks,San Jose,82,35,30,10,80,0.487804878
+2019,St. Louis Blues,St. Louis,82,45,28,9,99,0.603658537
+2018,St. Louis Blues,St. Louis,82,44,32,6,94,0.573170732
+2017,St. Louis Blues,St. Louis,82,46,29,7,99,0.603658537
+2016,St. Louis Blues,St. Louis,82,49,24,9,107,0.652439024
+2015,St. Louis Blues,St. Louis,82,51,24,7,109,0.664634146
+2014,St. Louis Blues,St. Louis,82,52,23,7,111,0.676829268
+2013,St. Louis Blues,St. Louis,48,29,17,2,60,0.625
+2012,St. Louis Blues,St. Louis,82,49,22,11,109,0.664634146
+2011,St. Louis Blues,St. Louis,82,38,33,11,87,0.530487805
+2010,St. Louis Blues,St. Louis,82,40,32,10,90,0.548780488
+2009,St. Louis Blues,St. Louis,82,41,31,10,92,0.56097561
+2008,St. Louis Blues,St. Louis,82,33,36,13,79,0.481707317
+2007,St. Louis Blues,St. Louis,82,34,35,13,81,0.493902439
+2006,St. Louis Blues,St. Louis,82,21,46,15,57,0.347560976
+2004,St. Louis Blues,St. Louis,82,39,30,11,89,0.542682927
+2003,St. Louis Blues,St. Louis,82,41,24,11,93,0.567073171
+2002,St. Louis Blues,St. Louis,82,43,27,8,94,0.573170732
+2001,St. Louis Blues,St. Louis,82,43,22,12,98,0.597560976
+2000,St. Louis Blues,St. Louis,82,51,19,11,113,0.68902439
+2018,Tampa Bay Lightning,Tampa,82,54,23,5,113,0.68902439
+2017,Tampa Bay Lightning,Tampa,82,42,30,10,94,0.573170732
+2016,Tampa Bay Lightning,Tampa,82,46,31,5,97,0.591463415
+2015,Tampa Bay Lightning,Tampa,82,50,24,8,108,0.658536585
+2014,Tampa Bay Lightning,Tampa,82,46,27,9,101,0.615853659
+2013,Tampa Bay Lightning,Tampa,48,18,26,4,40,0.416666667
+2012,Tampa Bay Lightning,Tampa,82,38,36,8,84,0.512195122
+2011,Tampa Bay Lightning,Tampa,82,46,25,11,103,0.62804878
+2010,Tampa Bay Lightning,Tampa,82,34,36,12,80,0.487804878
+2009,Tampa Bay Lightning,Tampa,82,24,40,18,66,0.402439024
+2008,Tampa Bay Lightning,Tampa,82,31,42,9,71,0.432926829
+2007,Tampa Bay Lightning,Tampa,82,44,33,5,93,0.567073171
+2006,Tampa Bay Lightning,Tampa,82,43,33,6,92,0.56097561
+2004,Tampa Bay Lightning,Tampa,82,46,22,8,100,0.609756098
+2003,Tampa Bay Lightning,Tampa,82,36,25,16,88,0.536585366
+2002,Tampa Bay Lightning,Tampa,82,27,40,11,65,0.396341463
+2001,Tampa Bay Lightning,Tampa,82,24,47,6,54,0.329268293
+2000,Tampa Bay Lightning,Tampa,82,19,47,9,47,0.286585366
+2019,Toronto Maple Leafs,Toronto,82,46,28,8,100,0.609756098
+2018,Toronto Maple Leafs,Toronto,82,49,26,7,105,0.640243902
+2017,Toronto Maple Leafs,Toronto,82,40,27,15,95,0.579268293
+2016,Toronto Maple Leafs,Toronto,82,29,42,11,69,0.420731707
+2015,Toronto Maple Leafs,Toronto,82,30,44,8,68,0.414634146
+2014,Toronto Maple Leafs,Toronto,82,38,36,8,84,0.512195122
+2013,Toronto Maple Leafs,Toronto,48,26,17,5,57,0.59375
+2012,Toronto Maple Leafs,Toronto,82,35,37,10,80,0.487804878
+2011,Toronto Maple Leafs,Toronto,82,37,34,11,85,0.518292683
+2010,Toronto Maple Leafs,Toronto,82,30,38,14,74,0.451219512
+2009,Toronto Maple Leafs,Toronto,82,34,35,13,81,0.493902439
+2008,Toronto Maple Leafs,Toronto,82,36,35,11,83,0.506097561
+2007,Toronto Maple Leafs,Toronto,82,40,31,11,91,0.554878049
+2006,Toronto Maple Leafs,Toronto,82,41,33,8,90,0.548780488
+2004,Toronto Maple Leafs,Toronto,82,45,24,10,100,0.609756098
+2003,Toronto Maple Leafs,Toronto,82,44,28,7,95,0.579268293
+2002,Toronto Maple Leafs,Toronto,82,43,25,10,96,0.585365854
+2001,Toronto Maple Leafs,Toronto,82,37,29,11,85,0.518292683
+2000,Toronto Maple Leafs,Toronto,82,45,27,7,97,0.591463415
+2019,Vancouver Canucks,Vancouver,82,35,36,11,81,0.493902439
+2018,Vancouver Canucks,Vancouver,82,31,40,11,73,0.445121951
+2017,Vancouver Canucks,Vancouver,82,30,43,9,69,0.420731707
+2016,Vancouver Canucks,Vancouver,82,31,38,13,75,0.457317073
+2015,Vancouver Canucks,Vancouver,82,48,29,5,101,0.615853659
+2014,Vancouver Canucks,Vancouver,82,36,35,11,83,0.506097561
+2013,Vancouver Canucks,Vancouver,48,26,15,7,59,0.614583333
+2012,Vancouver Canucks,Vancouver,82,51,22,9,111,0.676829268
+2011,Vancouver Canucks,Vancouver,82,54,19,9,117,0.713414634
+2010,Vancouver Canucks,Vancouver,82,49,28,5,103,0.62804878
+2009,Vancouver Canucks,Vancouver,82,45,27,10,100,0.609756098
+2008,Vancouver Canucks,Vancouver,82,39,33,10,88,0.536585366
+2007,Vancouver Canucks,Vancouver,82,49,26,7,105,0.640243902
+2006,Vancouver Canucks,Vancouver,82,42,32,8,92,0.56097561
+2004,Vancouver Canucks,Vancouver,82,43,24,10,96,0.585365854
+2003,Vancouver Canucks,Vancouver,82,45,23,13,103,0.62804878
+2002,Vancouver Canucks,Vancouver,82,42,30,7,91,0.554878049
+2001,Vancouver Canucks,Vancouver,82,36,28,11,83,0.506097561
+2000,Vancouver Canucks,Vancouver,82,30,28,15,75,0.457317073
+2019,Vegas Golden Knights,Las Vegas,82,43,32,7,93,0.567073171
+2018,Vegas Golden Knights,Las Vegas,82,51,24,7,109,0.664634146
+2019,Washington Capitals,Washington,82,48,26,8,104,0.634146341
+2018,Washington Capitals,Washington,82,49,26,7,105,0.640243902
+2017,Washington Capitals,Washington,82,55,19,8,118,0.719512195
+2016,Washington Capitals,Washington,82,56,18,8,120,0.731707317
+2015,Washington Capitals,Washington,82,45,26,11,101,0.615853659
+2014,Washington Capitals,Washington,82,38,30,14,90,0.548780488
+2013,Washington Capitals,Washington,48,27,18,3,57,0.59375
+2012,Washington Capitals,Washington,82,42,32,8,92,0.56097561
+2011,Washington Capitals,Washington,82,48,23,11,107,0.652439024
+2010,Washington Capitals,Washington,82,54,15,13,121,0.737804878
+2009,Washington Capitals,Washington,82,50,24,8,108,0.658536585
+2008,Washington Capitals,Washington,82,43,31,8,94,0.573170732
+2007,Washington Capitals,Washington,82,28,40,14,70,0.426829268
+2006,Washington Capitals,Washington,82,29,41,12,70,0.426829268
+2004,Washington Capitals,Washington,82,23,46,10,56,0.341463415
+2003,Washington Capitals,Washington,82,39,29,8,86,0.524390244
+2002,Washington Capitals,Washington,82,36,33,11,83,0.506097561
+2001,Washington Capitals,Washington,82,41,27,10,92,0.56097561
+2000,Washington Capitals,Washington,82,44,24,12,100,0.609756098
+2019,Winnipeg Jets,Winnipeg,82,47,30,5,99,0.603658537
+2018,Winnipeg Jets,Winnipeg,82,52,20,10,114,0.695121951
+2017,Winnipeg Jets,Winnipeg,82,40,35,7,87,0.530487805
+2016,Winnipeg Jets,Winnipeg,82,35,39,8,78,0.475609756
+2015,Winnipeg Jets,Winnipeg,82,43,26,13,99,0.603658537
+2014,Winnipeg Jets,Winnipeg,82,37,35,10,84,0.512195122
+2013,Winnipeg Jets,Winnipeg,48,24,21,3,51,0.53125
+2012,Winnipeg Jets,Winnipeg,82,37,35,10,84,0.512195122
