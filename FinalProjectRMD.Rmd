@@ -71,7 +71,7 @@ CitiesEconomy <-
   select(Year, City_Name, Country_Code, Value)
 colnames(CitiesEconomy)[4] <- "GDP"
 CitiesEconomy %>%
-  head()
+  head(100)
 ```
 
 ```{r}
@@ -135,5 +135,20 @@ MLBTeamWinningPercentage <-
 colnames(MLBTeamWinningPercentage)[1] <- "Teams"
 MLBTeamWinningPercentage %>%
   head()
+```
+
+
+```{r}
+CitiesPopulation %>%
+  mutate(Country_Code = as.character())
+
+USACitiesPopulation <-
+  grep("^USA", CitiesPopulation$Country_Code, value = TRUE)
+
+USACitiesPopulation %>%
+  head(100)
+
+CitiesPopulation %>%
+  head(100)
 ```
 
