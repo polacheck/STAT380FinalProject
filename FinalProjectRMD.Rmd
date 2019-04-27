@@ -1,6 +1,6 @@
 ---
 title: 'Final Project'
-author: "Vince Birch & Stephen Polacheck"
+author: "Vince Birch & Stephen Polacheck 2"
 date: 'Due: May 1'
 output: html_notebook
 ---
@@ -50,6 +50,11 @@ NFLTeamDataRaw <-
   read.csv(file = "NFL Team Data.csv", header = TRUE, sep = ",")
 MLBTeamDataRaw <-
   read.csv(file = "MLBWinning.csv", header = TRUE, sep = ",")
+NHLTeamDataRaw <-
+  read.csv(file = "NHL Data.csv", header = TRUE, sep = ",")
+NBATeamDataRaw <-
+  read.csv(file = "NBAData.csv", header = TRUE, sep = ",")
+
 ```
 
 ```{r}
@@ -68,12 +73,10 @@ CitiesPopulation %>%
 ```
 
 ```{r}
-
 colnames(CitiesEconomyRaw)[1] <- "Country_Code"
 colnames(CitiesEconomyRaw)[2] <- "City_Name"
 CitiesEconomy <-
   CitiesEconomyRaw %>%
-  filter(VAR == "GDP_REAL_PPP") %>%
   select(Year, City_Name, Country_Code, Value)
 colnames(CitiesEconomy)[4] <- "GDP"
 CitiesEconomy %>%
@@ -85,11 +88,10 @@ colnames(CitiesIncomeDistributionRaw)[1] <- "Country_Code"
 colnames(CitiesIncomeDistributionRaw)[2] <- "City_Name"
 CitiesIncomeDistribution <-
   CitiesIncomeDistributionRaw %>%
-  filter(VAR == "INCOME_DISP_HH_REAL_PPP") %>%
   select(Year, City_Name, Country_Code, Value)
 colnames(CitiesIncomeDistribution)[4] <- "IncomeDistribution"
 CitiesIncomeDistribution %>%
-  head(1000)
+  head()
 ```
 
 ```{r}
@@ -120,13 +122,15 @@ head(HappyCitiesRaw)
 head(NFLTeamDataRaw)
 colnames(NFLTeamDataRaw)[1] <- "Year"
 colnames(NFLTeamDataRaw)[3] <- "Team"
-colnames(NFLTeamDataRaw)[4] <- "Wins"
-colnames(NFLTeamDataRaw)[5] <- "Losses"
-colnames(NFLTeamDataRaw)[6] <- "Ties"
+colnames(NFLTeamDataRaw)[4] <- "City"
+colnames(NFLTeamDataRaw)[5] <- "Wins"
+colnames(NFLTeamDataRaw)[6] <- "Losses"
+colnames(NFLTeamDataRaw)[7] <- "Ties"
 NFLTeamData <-
   NFLTeamDataRaw %>%
-  select(Year, Team, Wins, Losses, Ties) %>%
+  select(Year, City, Team, Wins, Losses, Ties) %>%
   mutate(Year = as.numeric(Year),
+         Team = gsub("[*|+]","", Team),
          Wins = as.numeric(Wins),
          Losses = as.numeric(Losses),
          Ties = as.numeric(Ties),
@@ -144,6 +148,20 @@ MLBTeamWinningPercentage %>%
   head()
 ```
 
+```{r}
+NBATeamWinningPercentage <-
+  NBATeamDataRaw %>%
+  select(Year, Team, City, W, L, WPCT)
+NBATeamWinningPercentage %>%
+  head()
+```
+
+```{r}
+NHLTeamWinningPercentage <-
+  NHLTeamDataRaw
+NHLTeamWinningPercentage %>%
+  head()
+```
 
 ```{r}
 USACitiesPopulation <-
@@ -162,17 +180,6 @@ USACitiesEconomy <-
 USACitiesEconomy %>%
   head(1000)
 ```
-
-```{r}
-USACitiesIncomeDistribution <-
-  CitiesIncomeDistribution %>%
-  filter(grepl("^USA", Country_Code) == TRUE)
-
-USACitiesIncomeDistribution %>%
-  head(1000)
-```
-
-
 
 
 
