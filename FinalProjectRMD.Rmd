@@ -69,7 +69,7 @@ CitiesPopulation <-
   select(Year, City_Name, Country_Code, Value)
 colnames(CitiesPopulation)[4] <- "Population"
 CitiesPopulation %>%
-  head()
+  head(10000)
 ```
 
 
@@ -191,17 +191,21 @@ NHLTeamWinningPercentage %>%
 USACitiesPopulation <-
   CitiesPopulation %>%
   filter(grepl("^USA", Country_Code) == TRUE) %>%
-  mutate(City_Name = gsub('\\(.*\\)', "", City_Name))
+  mutate(City_Name = gsub('\\(.*\\)', "", City_Name),
+         City_Name = gsub('Tampa-Hillsborough', "Tampa", City_Name),
+         City_Name = gsub('Tampa-Pinellas', "Tampa", City_Name), 
+         Population = as.numeric(Population))
 
-USACitiesPopulation %>%
-  head(1000)
+USACitiesPopulation
 ```
 
 ```{r}
 USACitiesEconomy <-
   CitiesEconomy %>%
   filter(grepl("^USA", Country_Code) == TRUE) %>%
-  mutate(City_Name = gsub('\\(.*\\)', "", City_Name))
+  mutate(City_Name = gsub('\\(.*\\)', "", City_Name),
+         City_Name = gsub('Tampa-Hillsborough', "Tampa", City_Name),
+         City_Name = gsub('Tampa-Pinellas', "Tampa", City_Name))
 
 USACitiesEconomy %>%
   head(1000)
@@ -211,7 +215,9 @@ USACitiesEconomy %>%
 USACitiesIncomeDistribution <-
   CitiesIncomeDistribution %>%
   filter(grepl("^USA", Country_Code) == TRUE) %>%
-  mutate(City_Name = gsub('\\(.*\\)', "", City_Name))
+  mutate(City_Name = gsub('\\(.*\\)', "", City_Name),
+         City_Name = gsub('Tampa-Hillsborough', "Tampa", City_Name),
+         City_Name = gsub('Tampa-Pinellas', "Tampa", City_Name))
 
 USACitiesIncomeDistribution %>%
   head(1000)
@@ -224,11 +230,24 @@ USACitiesEnvironment <-
 
 USACitiesEnvironment <-
   USACitiesEnvironment %>%
-  mutate(City_Name = gsub('\\(.*\\)', "", City_Name))
+  mutate(City_Name = gsub('\\(.*\\)', "", City_Name),
+         City_Name = gsub('Tampa-Hillsborough', "Tampa", City_Name),
+         City_Name = gsub('Tampa-Pinellas', "Tampa", City_Name))
 
 USACitiesEnvironment %>%
   head(1000)
 ```
+
+```{r}
+HappyCities <-
+HappyCities %>%
+mutate(City = gsub(", ..", "", City), 
+       Year = 2018)
+
+
+```
+
+
 
 ```{r}
 NFLandMLB <-
@@ -247,6 +266,20 @@ AddingNBA %>%
  full_join(NHLTeamWinningPercentage, by = c("City" = "City", "year" = "Year"))
 AddingNHL %>%
   head(1000)
+```
+
+```{r}
+PlusPopulation <-
+  AddingNHL %>%
+ left_join(USACitiesPopulation, by = c("City" = "City_Name", "year" = "Year")) %>%
+  select(-Country_Code)
+```
+
+```{r}
+PlusHappy <-
+  PlusPopulation %>%
+ left_join(HappyCities, by = c("City" = "City"))
+PlusHappy
 ```
 
 
