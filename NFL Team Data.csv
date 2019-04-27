@@ -1132,64 +1132,64 @@ Year,Lg,Tm,City,W,L,T,Div. Finish,Playoffs,PF,PA,PD,Coaches,AV,Passer,Rusher,Rec
 1968,AFL,Miami Dolphins,Miami,5,8,1,3rd of 5,,276,355,-79,Wilson,Griese,Griese,Kiick,Noonan,6,6,7,9,3,6,6,10,-5.6,-0.9,-6.5,-2.5,-4
 1967,AFL,Miami Dolphins,Miami,4,10,0,3rd of 5,,219,407,-188,Wilson,Clancy,Griese,Haynes,Clancy,9,6,8,8,6,9,8,9,-13.4,1.2,-12.2,-6.2,-6
 1966,AFL,Miami Dolphins,Miami,3,11,0,4th of 5,,213,362,-149,Wilson,Warren,Wood,Auer,Roberson,8,8,7,8,3,8,8,9,-10.6,0.9,-9.7,-7.3,-2.4
-2018,NFL,Minnesota Vikings,Minnesota,8,7,1,2nd of 4,,360,341,19,Zimmer,Hunter,Cousins,Cook,Thielen,19,20,9,4,19,12,7,32,1.2,-0.6,0.6,-1.2,1.8
-2017,NFL,Minnesota Vikings*,Minnesota,13,3,0,1st of 4,Lost Conf,382,252,130,Zimmer,Griffen,Keenum,Murray,Thielen,10,11,1,1,12,5,1,32,8.1,1,9.1,2.3,6.8
-2016,NFL,Minnesota Vikings,Minnesota,8,8,0,3rd of 4,,327,307,20,Zimmer,Griffen,Bradford,McKinnon,Thielen,23,28,6,3,4,15,18,32,1.3,-0.3,0.9,-2.6,3.6
-2015,NFL,Minnesota Vikings*,Minnesota,11,5,0,1st of 4,Lost WC,365,302,63,Zimmer,Peterson,Bridgewater,Peterson,Diggs,16,29,5,13,10,9,21,32,3.9,1.9,5.8,1.1,4.7
-2014,NFL,Minnesota Vikings,Minnesota,7,9,0,3rd of 4,,325,343,-18,Zimmer,Bridgewater,Bridgewater,Asiata,Jennings,20,27,11,14,18,18,24,32,-1.1,-0.5,-1.7,-2.8,1.1
-2013,NFL,Minnesota Vikings,Minnesota,5,10,1,4th of 4,,391,480,-89,Frazier,Peterson,Cassel,Peterson,Jennings,14,13,32,31,28,23,29,32,-5.6,-1.1,-6.6,0.2,-6.9
-2012,NFL,Minnesota Vikings*,Minnesota,10,6,0,2nd of 4,Lost WC,379,348,31,Frazier,Peterson,Ponder,Peterson,Harvin,14,20,14,16,17,13,19,32,1.9,1.4,3.4,1.6,1.8
-2011,NFL,Minnesota Vikings,Minnesota,3,13,0,4th of 4,,340,449,-109,Frazier,Allen,Ponder,Peterson,Harvin,19,18,31,21,19,28,24,32,-6.8,1.1,-5.7,-1.6,-4.1
-2010,NFL,Minnesota Vikings,Minnesota,6,10,0,4th of 4,,281,348,-67,"Frazier,Childress",Henderson,Favre,Peterson,Harvin,29,23,18,8,29,25,17,32,-4.2,2.6,-1.6,-3.3,1.7
-2009,NFL,Minnesota Vikings*,Minnesota,12,4,0,1st of 4,Lost Conf,470,312,158,Childress,Hutchinson,Favre,Peterson,Rice,2,5,10,6,8,3,4,32,9.9,-2.7,7.2,6.6,0.6
-2008,NFL,Minnesota Vikings*,Minnesota,10,6,0,1st of 4,Lost WC,379,333,46,Childress,Allen,Frerotte,Peterson,Berrian,12,17,13,6,24,13,9,32,2.9,1.2,4,1.1,2.9
-2007,NFL,Minnesota Vikings,Minnesota,8,8,0,2nd of 4,,365,311,54,Childress,Williams,Jackson,Peterson,Wade,15,13,12,20,13,10,18,32,3.4,0.4,3.8,1.4,2.4
-2006,NFL,Minnesota Vikings,Minnesota,6,10,0,3rd of 4,,282,327,-45,Childress,Williams,Johnson,Taylor,Taylor,26,23,14,8,10,22,15,32,-2.8,-1.3,-4.1,-3.7,-0.4
-2005,NFL,Minnesota Vikings,Minnesota,9,7,0,2nd of 4,,306,344,-38,Tice,Sharper,Johnson,Moore,Taylor,19,25,19,21,12,19,27,32,-2.4,-1.1,-3.5,-1.4,-2.1
-2004,NFL,Minnesota Vikings*,Minnesota,8,8,0,2nd of 4,Lost Div,405,395,10,Tice,Culpepper,Culpepper,Smith,Burleson,6,4,26,28,18,13,11,32,0.6,-2.3,-1.7,3,-4.7
-2003,NFL,Minnesota Vikings,Minnesota,9,7,0,2nd of 4,,416,353,63,Tice,Moss,Culpepper,Williams,Moss,6,1,23,23,5,11,5,32,3.9,-1,2.9,4,-1.1
-2002,NFL,Minnesota Vikings,Minnesota,6,10,0,2nd of 4,,390,442,-52,Tice,Culpepper,Culpepper,Bennett,Moss,8,2,30,26,31,24,12,32,-3.3,0.2,-3,3.1,-6.1
-2001,NFL,Minnesota Vikings,Minnesota,5,11,0,4th of 5,,290,390,-100,"Green,Tice",Moss,Culpepper,Bennett,Moss,24,12,26,27,31,28,26,31,-6.3,1.5,-4.7,-0.8,-3.9
-2000,NFL,Minnesota Vikings*,Minnesota,11,5,0,1st of 5,Lost Conf,397,371,26,Green,Culpepper,Culpepper,Smith,Moss,5,5,24,28,26,15,15,31,1.6,0.3,1.9,4.3,-2.3
-1999,NFL,Minnesota Vikings*,Minnesota,10,6,0,2nd of 5,Lost Div,399,335,64,Green,Moss,George,Smith,Moss,5,3,18,27,27,9,13,31,4,0.4,4.4,5.2,-0.8
-1998,NFL,Minnesota Vikings*,Minnesota,15,1,0,1st of 5,Lost Conf,556,296,260,Green,Cunningham,Cunningham,Smith,Moss,1,2,6,13,2,1,2,30,16.3,-1.4,14.9,13.2,1.6
-1997,NFL,Minnesota Vikings*,Minnesota,9,7,0,4th of 5,Lost Div,354,359,-5,Green,Randle,Johnson,Smith,Reed,11,8,19,29,10,16,21,30,-0.3,0.2,-0.1,1.7,-1.8
-1996,NFL,Minnesota Vikings*,Minnesota,9,7,0,2nd of 5,Lost WC,298,315,-17,Green,Randle,Johnson,Smith,Reed,23,12,15,16,11,17,11,30,-1.1,0.9,-0.1,-0.9,0.7
-1995,NFL,Minnesota Vikings,Minnesota,8,8,0,4th of 5,,412,385,27,Green,McDaniel,Moon,Smith,Carter,4,4,27,20,2,10,8,30,1.7,2,3.7,5.1,-1.4
-1994,NFL,Minnesota Vikings*,Minnesota,10,6,0,1st of 5,Lost WC,356,314,42,Green,Randle,Moon,Allen,Carter,7,3,13,5,13,8,2,28,2.6,0.6,3.2,2.4,0.8
-1993,NFL,Minnesota Vikings*,Minnesota,9,7,0,2nd of 5,Lost WC,277,290,-13,Green,Randle,McMahon,Graham,Carter,20,17,12,1,5,17,8,28,-0.8,0.7,-0.1,-1.3,1.2
-1992,NFL,Minnesota Vikings*,Minnesota,11,5,0,1st of 5,Lost WC,374,249,125,Green,Doleman,Gannon,Allen,Carter,4,11,7,8,3,4,10,28,7.8,-0.1,7.7,4.4,3.3
-1991,NFL,Minnesota Vikings,Minnesota,8,8,0,3rd of 5,,301,306,-5,Burns,McDaniel,Gannon,Walker,Carter,13,10,16,14,9,16,12,28,-0.3,-1.7,-2,-0.2,-1.8
-1990,NFL,Minnesota Vikings,Minnesota,6,10,0,5th of 5,,351,326,25,Burns,McDaniel,Gannon,Walker,Carter,9,12,16,13,18,13,12,28,1.6,0.9,2.4,2.6,-0.2
-1989,NFL,Minnesota Vikings*,Minnesota,10,6,0,1st of 5,Lost Div,351,275,76,Burns,Doleman,Wilson,Walker,Carter,11,14,6,1,15,10,3,28,4.8,-0.4,4.3,0.2,4.1
-1988,NFL,Minnesota Vikings*,Minnesota,11,5,0,2nd of 5,Lost Div,406,233,173,Burns,Millard,Wilson,Nelson,Carter,4,7,2,1,1,1,1,28,10.8,0,10.9,6.5,4.3
-1987,NFL,Minnesota Vikings*,Minnesota,8,7,0,2nd of 5,Lost Conf,336,335,1,Burns,Doleman,Wilson,Nelson,Carter,13,15,16,10,12,12,14,28,0.1,-2.7,-2.6,-0.1,-2.5
-1986,NFL,Minnesota Vikings,Minnesota,9,7,0,2nd of 5,,398,273,125,Burns,Nelson,Kramer,Nelson,Jordan,4,4,5,11,4,4,4,28,7.8,-1.3,6.5,4,2.5
-1985,NFL,Minnesota Vikings,Minnesota,7,9,0,3rd of 5,,346,359,-13,Grant,Kramer,Kramer,Nelson,Carter,14,16,17,16,18,16,20,28,-0.8,-0.4,-1.2,0.1,-1.3
-1984,NFL,Minnesota Vikings,Minnesota,3,13,0,5th of 5,,276,484,-208,Steckel,Tausch,Kramer,Anderson,Lewis,24,25,28,28,26,28,28,28,-13,2.1,-10.9,-2.7,-8.2
-1983,NFL,Minnesota Vikings,Minnesota,8,8,0,4th of 5,,316,348,-32,Grant,Martin,Dils,Nelson,Nelson,18,20,17,19,2,20,21,28,-2,-1.1,-3.1,-2.9,-0.1
-1982,NFL,Minnesota Vikings*,Minnesota,5,4,0,2nd of 5,Lost Div,187,198,-11,Grant,Kramer,Kramer,Brown,White,13,14,20,19,7,16,15,28,-1.2,2.4,1.2,2.1,-1
-1981,NFL,Minnesota Vikings,Minnesota,7,9,0,4th of 5,,325,369,-44,Grant,Brown,Kramer,Brown,Senser,13,6,21,17,25,18,10,28,-2.8,0.7,-2,0,-2.1
-1980,NFL,Minnesota Vikings*,Minnesota,9,7,0,1st of 5,Lost Div,317,308,9,Grant,Blair,Kramer,Brown,Rashad,15,11,11,26,3,14,20,28,0.6,-0.9,-0.3,0,-0.3
-1979,NFL,Minnesota Vikings,Minnesota,7,9,0,3rd of 5,,259,337,-78,Grant,Rashad,Kramer,Young,Rashad,24,19,17,18,21,22,21,28,-4.9,-2.7,-7.5,-4.5,-3.1
-1978,NFL,Minnesota Vikings*,Minnesota,8,7,1,1st of 5,Lost Div,294,306,-12,Grant,Tarkenton,Tarkenton,Foreman,Rashad,12,17,20,14,24,13,15,28,-0.8,0.6,-0.2,1,-1.1
-1977,NFL,Minnesota Vikings*,Minnesota,9,5,0,1st of 5,Lost Conf,231,227,4,Grant,Foreman,Tarkenton,Foreman,White,16,14,13,11,28,14,7,28,0.3,-1.9,-1.6,-1,-0.6
-1976,NFL,Minnesota Vikings*,Minnesota,11,2,1,1st of 4,Lost SB,305,176,129,Grant,Foreman,Tarkenton,Foreman,White,9,6,2,6,12,5,3,28,9.2,0.1,9.3,3.7,5.7
-1975,NFL,Minnesota Vikings*,Minnesota,12,2,0,1st of 4,Lost Div,377,180,197,Grant,Foreman,Tarkenton,Foreman,Gilliam,3,5,3,1,2,2,1,26,14.1,-5.2,8.9,3.5,5.4
-1974,NFL,Minnesota Vikings*,Minnesota,10,4,0,1st of 4,Lost SB,310,195,115,Grant,Foreman,Tarkenton,Foreman,Lash,5,3,3,10,3,4,5,26,8.2,-2.1,6.1,3.6,2.5
-1973,NFL,Minnesota Vikings*,Minnesota,12,2,0,1st of 4,Lost SB,296,168,128,Grant,Eller,Tarkenton,Foreman,Gilliam,9,7,2,12,5,5,8,26,9.1,-0.5,8.6,1.7,6.9
-1972,NFL,Minnesota Vikings,Minnesota,7,7,0,3rd of 4,,301,252,49,Grant,Gilliam,Tarkenton,Reed,Gilliam,12,12,11,5,6,10,7,26,3.5,2.6,6.1,2.6,3.4
-1971,NFL,Minnesota Vikings*,Minnesota,11,3,0,1st of 4,Lost Div,245,139,106,Grant,Page,Cuozzo,Jones,Grim,18,23,1,2,4,4,14,26,7.6,-1.1,6.5,-3.4,9.9
-1970,NFL,Minnesota Vikings*,Minnesota,12,2,0,1st of 4,Lost Div,335,143,192,Grant,Page,Cuozzo,Osborn,Washington,3,19,1,1,4,1,1,26,13.7,1.4,15.1,5.9,9.2
-1969,NFL,Minnesota Vikings*,Minnesota,12,2,0,1st of 4,Lost SB,379,133,246,Grant,Page,Kapp,Osborn,Washington,1,10,1,1,3,1,2,16,17.6,0,17.6,6.9,10.6
-1968,NFL,Minnesota Vikings*,Minnesota,8,6,0,1st of 4,Lost Div,282,242,40,Grant,Eller,Kapp,Brown,Washington,8,14,6,5,5,6,9,16,2.9,-0.2,2.7,0.3,2.4
-1967,NFL,Minnesota Vikings,Minnesota,3,8,3,4th of 4,,233,294,-61,Grant,Osborn,Kapp,Osborn,Washington,14,14,7,6,9,13,12,16,-4.4,2.3,-2.1,-3.2,1.2
-1966,NFL,Minnesota Vikings,Minnesota,4,9,1,6th of 7,,292,304,-12,Van Brocklin,Tingelhoff,Tarkenton,Brown,Flatley,9,4,8,5,13,9,3,15,-0.9,3,2.2,1.9,0.3
-1965,NFL,Minnesota Vikings,Minnesota,7,7,0,5th of 7,,383,403,-20,Van Brocklin,Tingelhoff,Tarkenton,Brown,Flatley,4,4,14,7,11,9,4,14,-1.4,6.5,5.1,7.9,-2.8
-1964,NFL,Minnesota Vikings,Minnesota,8,5,1,2nd of 7,,355,296,59,Van Brocklin,Brown,Tarkenton,Brown,Brown,4,6,6,10,5,4,5,14,4.2,1.6,5.8,4.6,1.1
-1963,NFL,Minnesota Vikings,Minnesota,5,8,1,4th of 7,,309,390,-81,Van Brocklin,Tarkenton,Tarkenton,Mason,Flatley,8,11,12,9,4,10,10,14,-5.8,0.4,-5.4,1.7,-7.1
-1962,NFL,Minnesota Vikings,Minnesota,2,11,1,6th of 7,,254,410,-156,Van Brocklin,Tarkenton,Tarkenton,Mason,Mason,13,12,14,12,13,14,13,14,-11.1,4.4,-6.7,-0.8,-6
-1961,NFL,Minnesota Vikings,Minnesota,3,11,0,7th of 7,,285,407,-122,Van Brocklin,Tarkenton,Tarkenton,McElhenny,Reichow,9,12,14,14,6,12,14,14,-8.7,2.1,-6.6,0.1,-6.8
+2018,NFL,Minnesota Vikings,Minneapolis,8,7,1,2nd of 4,,360,341,19,Zimmer,Hunter,Cousins,Cook,Thielen,19,20,9,4,19,12,7,32,1.2,-0.6,0.6,-1.2,1.8
+2017,NFL,Minnesota Vikings*,Minneapolis,13,3,0,1st of 4,Lost Conf,382,252,130,Zimmer,Griffen,Keenum,Murray,Thielen,10,11,1,1,12,5,1,32,8.1,1,9.1,2.3,6.8
+2016,NFL,Minnesota Vikings,Minneapolis,8,8,0,3rd of 4,,327,307,20,Zimmer,Griffen,Bradford,McKinnon,Thielen,23,28,6,3,4,15,18,32,1.3,-0.3,0.9,-2.6,3.6
+2015,NFL,Minnesota Vikings*,Minneapolis,11,5,0,1st of 4,Lost WC,365,302,63,Zimmer,Peterson,Bridgewater,Peterson,Diggs,16,29,5,13,10,9,21,32,3.9,1.9,5.8,1.1,4.7
+2014,NFL,Minnesota Vikings,Minneapolis,7,9,0,3rd of 4,,325,343,-18,Zimmer,Bridgewater,Bridgewater,Asiata,Jennings,20,27,11,14,18,18,24,32,-1.1,-0.5,-1.7,-2.8,1.1
+2013,NFL,Minnesota Vikings,Minneapolis,5,10,1,4th of 4,,391,480,-89,Frazier,Peterson,Cassel,Peterson,Jennings,14,13,32,31,28,23,29,32,-5.6,-1.1,-6.6,0.2,-6.9
+2012,NFL,Minnesota Vikings*,Minneapolis,10,6,0,2nd of 4,Lost WC,379,348,31,Frazier,Peterson,Ponder,Peterson,Harvin,14,20,14,16,17,13,19,32,1.9,1.4,3.4,1.6,1.8
+2011,NFL,Minnesota Vikings,Minneapolis,3,13,0,4th of 4,,340,449,-109,Frazier,Allen,Ponder,Peterson,Harvin,19,18,31,21,19,28,24,32,-6.8,1.1,-5.7,-1.6,-4.1
+2010,NFL,Minnesota Vikings,Minneapolis,6,10,0,4th of 4,,281,348,-67,"Frazier,Childress",Henderson,Favre,Peterson,Harvin,29,23,18,8,29,25,17,32,-4.2,2.6,-1.6,-3.3,1.7
+2009,NFL,Minnesota Vikings*,Minneapolis,12,4,0,1st of 4,Lost Conf,470,312,158,Childress,Hutchinson,Favre,Peterson,Rice,2,5,10,6,8,3,4,32,9.9,-2.7,7.2,6.6,0.6
+2008,NFL,Minnesota Vikings*,Minneapolis,10,6,0,1st of 4,Lost WC,379,333,46,Childress,Allen,Frerotte,Peterson,Berrian,12,17,13,6,24,13,9,32,2.9,1.2,4,1.1,2.9
+2007,NFL,Minnesota Vikings,Minneapolis,8,8,0,2nd of 4,,365,311,54,Childress,Williams,Jackson,Peterson,Wade,15,13,12,20,13,10,18,32,3.4,0.4,3.8,1.4,2.4
+2006,NFL,Minnesota Vikings,Minneapolis,6,10,0,3rd of 4,,282,327,-45,Childress,Williams,Johnson,Taylor,Taylor,26,23,14,8,10,22,15,32,-2.8,-1.3,-4.1,-3.7,-0.4
+2005,NFL,Minnesota Vikings,Minneapolis,9,7,0,2nd of 4,,306,344,-38,Tice,Sharper,Johnson,Moore,Taylor,19,25,19,21,12,19,27,32,-2.4,-1.1,-3.5,-1.4,-2.1
+2004,NFL,Minnesota Vikings*,Minneapolis,8,8,0,2nd of 4,Lost Div,405,395,10,Tice,Culpepper,Culpepper,Smith,Burleson,6,4,26,28,18,13,11,32,0.6,-2.3,-1.7,3,-4.7
+2003,NFL,Minnesota Vikings,Minneapolis,9,7,0,2nd of 4,,416,353,63,Tice,Moss,Culpepper,Williams,Moss,6,1,23,23,5,11,5,32,3.9,-1,2.9,4,-1.1
+2002,NFL,Minnesota Vikings,Minneapolis,6,10,0,2nd of 4,,390,442,-52,Tice,Culpepper,Culpepper,Bennett,Moss,8,2,30,26,31,24,12,32,-3.3,0.2,-3,3.1,-6.1
+2001,NFL,Minnesota Vikings,Minneapolis,5,11,0,4th of 5,,290,390,-100,"Green,Tice",Moss,Culpepper,Bennett,Moss,24,12,26,27,31,28,26,31,-6.3,1.5,-4.7,-0.8,-3.9
+2000,NFL,Minnesota Vikings*,Minneapolis,11,5,0,1st of 5,Lost Conf,397,371,26,Green,Culpepper,Culpepper,Smith,Moss,5,5,24,28,26,15,15,31,1.6,0.3,1.9,4.3,-2.3
+1999,NFL,Minnesota Vikings*,Minneapolis,10,6,0,2nd of 5,Lost Div,399,335,64,Green,Moss,George,Smith,Moss,5,3,18,27,27,9,13,31,4,0.4,4.4,5.2,-0.8
+1998,NFL,Minnesota Vikings*,Minneapolis,15,1,0,1st of 5,Lost Conf,556,296,260,Green,Cunningham,Cunningham,Smith,Moss,1,2,6,13,2,1,2,30,16.3,-1.4,14.9,13.2,1.6
+1997,NFL,Minnesota Vikings*,Minneapolis,9,7,0,4th of 5,Lost Div,354,359,-5,Green,Randle,Johnson,Smith,Reed,11,8,19,29,10,16,21,30,-0.3,0.2,-0.1,1.7,-1.8
+1996,NFL,Minnesota Vikings*,Minneapolis,9,7,0,2nd of 5,Lost WC,298,315,-17,Green,Randle,Johnson,Smith,Reed,23,12,15,16,11,17,11,30,-1.1,0.9,-0.1,-0.9,0.7
+1995,NFL,Minnesota Vikings,Minneapolis,8,8,0,4th of 5,,412,385,27,Green,McDaniel,Moon,Smith,Carter,4,4,27,20,2,10,8,30,1.7,2,3.7,5.1,-1.4
+1994,NFL,Minnesota Vikings*,Minneapolis,10,6,0,1st of 5,Lost WC,356,314,42,Green,Randle,Moon,Allen,Carter,7,3,13,5,13,8,2,28,2.6,0.6,3.2,2.4,0.8
+1993,NFL,Minnesota Vikings*,Minneapolis,9,7,0,2nd of 5,Lost WC,277,290,-13,Green,Randle,McMahon,Graham,Carter,20,17,12,1,5,17,8,28,-0.8,0.7,-0.1,-1.3,1.2
+1992,NFL,Minnesota Vikings*,Minneapolis,11,5,0,1st of 5,Lost WC,374,249,125,Green,Doleman,Gannon,Allen,Carter,4,11,7,8,3,4,10,28,7.8,-0.1,7.7,4.4,3.3
+1991,NFL,Minnesota Vikings,Minneapolis,8,8,0,3rd of 5,,301,306,-5,Burns,McDaniel,Gannon,Walker,Carter,13,10,16,14,9,16,12,28,-0.3,-1.7,-2,-0.2,-1.8
+1990,NFL,Minnesota Vikings,Minneapolis,6,10,0,5th of 5,,351,326,25,Burns,McDaniel,Gannon,Walker,Carter,9,12,16,13,18,13,12,28,1.6,0.9,2.4,2.6,-0.2
+1989,NFL,Minnesota Vikings*,Minneapolis,10,6,0,1st of 5,Lost Div,351,275,76,Burns,Doleman,Wilson,Walker,Carter,11,14,6,1,15,10,3,28,4.8,-0.4,4.3,0.2,4.1
+1988,NFL,Minnesota Vikings*,Minneapolis,11,5,0,2nd of 5,Lost Div,406,233,173,Burns,Millard,Wilson,Nelson,Carter,4,7,2,1,1,1,1,28,10.8,0,10.9,6.5,4.3
+1987,NFL,Minnesota Vikings*,Minneapolis,8,7,0,2nd of 5,Lost Conf,336,335,1,Burns,Doleman,Wilson,Nelson,Carter,13,15,16,10,12,12,14,28,0.1,-2.7,-2.6,-0.1,-2.5
+1986,NFL,Minnesota Vikings,Minneapolis,9,7,0,2nd of 5,,398,273,125,Burns,Nelson,Kramer,Nelson,Jordan,4,4,5,11,4,4,4,28,7.8,-1.3,6.5,4,2.5
+1985,NFL,Minnesota Vikings,Minneapolis,7,9,0,3rd of 5,,346,359,-13,Grant,Kramer,Kramer,Nelson,Carter,14,16,17,16,18,16,20,28,-0.8,-0.4,-1.2,0.1,-1.3
+1984,NFL,Minnesota Vikings,Minneapolis,3,13,0,5th of 5,,276,484,-208,Steckel,Tausch,Kramer,Anderson,Lewis,24,25,28,28,26,28,28,28,-13,2.1,-10.9,-2.7,-8.2
+1983,NFL,Minnesota Vikings,Minneapolis,8,8,0,4th of 5,,316,348,-32,Grant,Martin,Dils,Nelson,Nelson,18,20,17,19,2,20,21,28,-2,-1.1,-3.1,-2.9,-0.1
+1982,NFL,Minnesota Vikings*,Minneapolis,5,4,0,2nd of 5,Lost Div,187,198,-11,Grant,Kramer,Kramer,Brown,White,13,14,20,19,7,16,15,28,-1.2,2.4,1.2,2.1,-1
+1981,NFL,Minnesota Vikings,Minneapolis,7,9,0,4th of 5,,325,369,-44,Grant,Brown,Kramer,Brown,Senser,13,6,21,17,25,18,10,28,-2.8,0.7,-2,0,-2.1
+1980,NFL,Minnesota Vikings*,Minneapolis,9,7,0,1st of 5,Lost Div,317,308,9,Grant,Blair,Kramer,Brown,Rashad,15,11,11,26,3,14,20,28,0.6,-0.9,-0.3,0,-0.3
+1979,NFL,Minnesota Vikings,Minneapolis,7,9,0,3rd of 5,,259,337,-78,Grant,Rashad,Kramer,Young,Rashad,24,19,17,18,21,22,21,28,-4.9,-2.7,-7.5,-4.5,-3.1
+1978,NFL,Minnesota Vikings*,Minneapolis,8,7,1,1st of 5,Lost Div,294,306,-12,Grant,Tarkenton,Tarkenton,Foreman,Rashad,12,17,20,14,24,13,15,28,-0.8,0.6,-0.2,1,-1.1
+1977,NFL,Minnesota Vikings*,Minneapolis,9,5,0,1st of 5,Lost Conf,231,227,4,Grant,Foreman,Tarkenton,Foreman,White,16,14,13,11,28,14,7,28,0.3,-1.9,-1.6,-1,-0.6
+1976,NFL,Minnesota Vikings*,Minneapolis,11,2,1,1st of 4,Lost SB,305,176,129,Grant,Foreman,Tarkenton,Foreman,White,9,6,2,6,12,5,3,28,9.2,0.1,9.3,3.7,5.7
+1975,NFL,Minnesota Vikings*,Minneapolis,12,2,0,1st of 4,Lost Div,377,180,197,Grant,Foreman,Tarkenton,Foreman,Gilliam,3,5,3,1,2,2,1,26,14.1,-5.2,8.9,3.5,5.4
+1974,NFL,Minnesota Vikings*,Minneapolis,10,4,0,1st of 4,Lost SB,310,195,115,Grant,Foreman,Tarkenton,Foreman,Lash,5,3,3,10,3,4,5,26,8.2,-2.1,6.1,3.6,2.5
+1973,NFL,Minnesota Vikings*,Minneapolis,12,2,0,1st of 4,Lost SB,296,168,128,Grant,Eller,Tarkenton,Foreman,Gilliam,9,7,2,12,5,5,8,26,9.1,-0.5,8.6,1.7,6.9
+1972,NFL,Minnesota Vikings,Minneapolis,7,7,0,3rd of 4,,301,252,49,Grant,Gilliam,Tarkenton,Reed,Gilliam,12,12,11,5,6,10,7,26,3.5,2.6,6.1,2.6,3.4
+1971,NFL,Minnesota Vikings*,Minneapolis,11,3,0,1st of 4,Lost Div,245,139,106,Grant,Page,Cuozzo,Jones,Grim,18,23,1,2,4,4,14,26,7.6,-1.1,6.5,-3.4,9.9
+1970,NFL,Minnesota Vikings*,Minneapolis,12,2,0,1st of 4,Lost Div,335,143,192,Grant,Page,Cuozzo,Osborn,Washington,3,19,1,1,4,1,1,26,13.7,1.4,15.1,5.9,9.2
+1969,NFL,Minnesota Vikings*,Minneapolis,12,2,0,1st of 4,Lost SB,379,133,246,Grant,Page,Kapp,Osborn,Washington,1,10,1,1,3,1,2,16,17.6,0,17.6,6.9,10.6
+1968,NFL,Minnesota Vikings*,Minneapolis,8,6,0,1st of 4,Lost Div,282,242,40,Grant,Eller,Kapp,Brown,Washington,8,14,6,5,5,6,9,16,2.9,-0.2,2.7,0.3,2.4
+1967,NFL,Minnesota Vikings,Minneapolis,3,8,3,4th of 4,,233,294,-61,Grant,Osborn,Kapp,Osborn,Washington,14,14,7,6,9,13,12,16,-4.4,2.3,-2.1,-3.2,1.2
+1966,NFL,Minnesota Vikings,Minneapolis,4,9,1,6th of 7,,292,304,-12,Van Brocklin,Tingelhoff,Tarkenton,Brown,Flatley,9,4,8,5,13,9,3,15,-0.9,3,2.2,1.9,0.3
+1965,NFL,Minnesota Vikings,Minneapolis,7,7,0,5th of 7,,383,403,-20,Van Brocklin,Tingelhoff,Tarkenton,Brown,Flatley,4,4,14,7,11,9,4,14,-1.4,6.5,5.1,7.9,-2.8
+1964,NFL,Minnesota Vikings,Minneapolis,8,5,1,2nd of 7,,355,296,59,Van Brocklin,Brown,Tarkenton,Brown,Brown,4,6,6,10,5,4,5,14,4.2,1.6,5.8,4.6,1.1
+1963,NFL,Minnesota Vikings,Minneapolis,5,8,1,4th of 7,,309,390,-81,Van Brocklin,Tarkenton,Tarkenton,Mason,Flatley,8,11,12,9,4,10,10,14,-5.8,0.4,-5.4,1.7,-7.1
+1962,NFL,Minnesota Vikings,Minneapolis,2,11,1,6th of 7,,254,410,-156,Van Brocklin,Tarkenton,Tarkenton,Mason,Mason,13,12,14,12,13,14,13,14,-11.1,4.4,-6.7,-0.8,-6
+1961,NFL,Minnesota Vikings,Minneapolis,3,11,0,7th of 7,,285,407,-122,Van Brocklin,Tarkenton,Tarkenton,McElhenny,Reichow,9,12,14,14,6,12,14,14,-8.7,2.1,-6.6,0.1,-6.8
 2018,NFL,New England Patriots*,Boston,11,5,0,1st of 4,Won SB,436,325,111,Belichick,Brady,Brady,Michel,Edelman,4,5,7,21,5,5,8,32,6.9,-1.8,5.2,3.1,2.1
 2017,NFL,New England Patriots*,Boston,13,3,0,1st of 4,Lost SB,458,296,162,Belichick,Brady,Brady,Lewis,Gronkowski,2,1,5,29,11,1,9,32,10.1,-1.2,8.9,6.3,2.6
 2016,NFL,New England Patriots*,Boston,14,2,0,1st of 4,Won SB,441,250,191,Belichick,Hightower,Brady,Blount,Edelman,3,4,1,8,3,1,2,32,11.9,-2.7,9.3,4.3,5
