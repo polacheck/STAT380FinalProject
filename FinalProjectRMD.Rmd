@@ -53,10 +53,14 @@ MLBTeamDataRaw <-
 ```
 
 ```{r}
+head(CitiesPopulationRaw, 500)
 colnames(CitiesPopulationRaw)[1] <- "Country_Code"
 colnames(CitiesPopulationRaw)[2] <- "City_Name"
 CitiesPopulation <-
   CitiesPopulationRaw %>%
+  filter(Unit.Code == "PER") %>%
+  filter(Unit == "Persons") %>%
+  filter(VAR == "T_T") %>%
   select(Year, City_Name, Country_Code, Value)
 colnames(CitiesPopulation)[4] <- "Population"
 CitiesPopulation %>%
@@ -139,16 +143,26 @@ MLBTeamWinningPercentage %>%
 
 
 ```{r}
-CitiesPopulation %>%
-  mutate(Country_Code = as.character())
-
 USACitiesPopulation <-
-  grep("^USA", CitiesPopulation$Country_Code, value = TRUE)
+  CitiesPopulation %>%
+  filter(grepl("^USA", Country_Code) == TRUE)
 
 USACitiesPopulation %>%
-  head(100)
-
-CitiesPopulation %>%
-  head(100)
+  head(1000)
 ```
+
+```{r}
+USACitiesEconomy <-
+  CitiesEconomy %>%
+  filter(grepl("^USA", Country_Code) == TRUE)
+
+USACitiesEconomy %>%
+  head(1000)
+```
+
+
+
+
+
+
 
