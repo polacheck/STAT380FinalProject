@@ -37,13 +37,13 @@ Year,Team,City,W,L,WPCT,GB,PS/G,PA/G,SRS
 2014,Boston Celtics,Boston,40,42,0.488,9,101.4,101.2,-0.4
 2012,Boston Celtics,Boston,41,40,0.506,12.5,96.5,96.7,-0.62
 2003,Boston Celtics,Boston,36,46,0.439,11,95.3,96.7,-1.99
-2017,Brooklyn Nets,New York City,28,54,0.341,31,106.6,110.3,-3.67
-2015,Brooklyn Nets,New York City,21,61,0.256,36,98.6,106,-7.12
-2016,Brooklyn Nets,New York City,20,62,0.244,33,105.8,112.5,-6.74
-2012,Brooklyn Nets,New York City,49,33,0.598,5,96.9,95.1,1.25
-2013,Brooklyn Nets,New York City,44,38,0.537,4,98.5,99.5,-1.58
-2018,Brooklyn Nets,New York City,42,40,0.512,18,112.3,112.3,-0.4
-2014,Brooklyn Nets,New York City,38,44,0.463,11,98,100.9,-3.13
+2017,Brooklyn Nets,New York,28,54,0.341,31,106.6,110.3,-3.67
+2015,Brooklyn Nets,New York,21,61,0.256,36,98.6,106,-7.12
+2016,Brooklyn Nets,New York,20,62,0.244,33,105.8,112.5,-6.74
+2012,Brooklyn Nets,New York,49,33,0.598,5,96.9,95.1,1.25
+2013,Brooklyn Nets,New York,44,38,0.537,4,98.5,99.5,-1.58
+2018,Brooklyn Nets,New York,42,40,0.512,18,112.3,112.3,-0.4
+2014,Brooklyn Nets,New York,38,44,0.463,11,98,100.9,-3.13
 2010,Charlotte Bobcats,Charlotte,34,48,0.415,24,93.3,97.3,-4.08
 2008,Charlotte Bobcats,Charlotte,35,47,0.427,24,93.6,94.9,-1.2
 2006,Charlotte Bobcats,Charlotte,33,49,0.402,11,96.9,100.6,-3.97
@@ -355,25 +355,25 @@ Year,Team,City,W,L,WPCT,GB,PS/G,PA/G,SRS
 2014,New Orleans Pelicans,New Orleans,45,37,0.549,11,99.4,98.6,1.13
 2006,New Orleans Hornets,New Orleans,39,43,0.476,28,95.5,97.1,-1.19
 2005,New Orleans Hornets,New Orleans,38,44,0.463,25,92.8,95.6,-2.51
-2002,New York Knicks,New York City,37,45,0.451,12,95.9,97.2,-1.61
-2017,New York Knicks,New York City,29,53,0.354,30,104.5,108,-3.53
-2009,New York Knicks,New York City,29,53,0.354,21,102.1,105.9,-4.01
-2016,New York Knicks,New York City,31,51,0.378,22,104.3,108,-3.87
-2006,New York Knicks,New York City,33,49,0.402,14,97.5,100.3,-3.06
-2004,New York Knicks,New York City,33,49,0.402,12,97.3,99.7,-2.72
-2015,New York Knicks,New York City,32,50,0.39,25,98.4,101.1,-2.74
-2001,New York Knicks,New York City,30,52,0.366,22,91.6,95.6,-4.15
-2008,New York Knicks,New York City,32,50,0.39,30,105.2,107.8,-2.33
-2007,New York Knicks,New York City,23,59,0.28,43,96.9,103.5,-6.55
-2018,New York Knicks,New York City,17,65,0.207,43,104.6,113.8,-8.93
-2014,New York Knicks,New York City,17,65,0.207,32,91.9,101.2,-9.5
-2005,New York Knicks,New York City,23,59,0.28,26,95.6,102,-6.3
-2013,New York Knicks,New York City,37,45,0.451,11,98.6,99.4,-1.4
-2012,New York Knicks,New York City,54,28,0.659,—,100,95.7,3.73
-2000,New York Knicks,New York City,48,34,0.585,8,88.7,86.1,1.98
-2010,New York Knicks,New York City,42,40,0.512,14,106.5,105.7,0.48
-2011,New York Knicks,New York City,36,30,0.545,3,97.8,94.7,2.39
-2003,New York Knicks,New York City,39,43,0.476,8,92,93.5,-1.97
+2002,New York Knicks,New York,37,45,0.451,12,95.9,97.2,-1.61
+2017,New York Knicks,New York,29,53,0.354,30,104.5,108,-3.53
+2009,New York Knicks,New York,29,53,0.354,21,102.1,105.9,-4.01
+2016,New York Knicks,New York,31,51,0.378,22,104.3,108,-3.87
+2006,New York Knicks,New York,33,49,0.402,14,97.5,100.3,-3.06
+2004,New York Knicks,New York,33,49,0.402,12,97.3,99.7,-2.72
+2015,New York Knicks,New York,32,50,0.39,25,98.4,101.1,-2.74
+2001,New York Knicks,New York,30,52,0.366,22,91.6,95.6,-4.15
+2008,New York Knicks,New York,32,50,0.39,30,105.2,107.8,-2.33
+2007,New York Knicks,New York,23,59,0.28,43,96.9,103.5,-6.55
+2018,New York Knicks,New York,17,65,0.207,43,104.6,113.8,-8.93
+2014,New York Knicks,New York,17,65,0.207,32,91.9,101.2,-9.5
+2005,New York Knicks,New York,23,59,0.28,26,95.6,102,-6.3
+2013,New York Knicks,New York,37,45,0.451,11,98.6,99.4,-1.4
+2012,New York Knicks,New York,54,28,0.659,—,100,95.7,3.73
+2000,New York Knicks,New York,48,34,0.585,8,88.7,86.1,1.98
+2010,New York Knicks,New York,42,40,0.512,14,106.5,105.7,0.48
+2011,New York Knicks,New York,36,30,0.545,3,97.8,94.7,2.39
+2003,New York Knicks,New York,39,43,0.476,8,92,93.5,-1.97
 2008,Oklahoma City Thunder,Oklahoma City,23,59,0.28,31,97,103.1,-6.04
 2014,Oklahoma City Thunder,Oklahoma City,45,37,0.549,6,104,101.8,2.47
 2012,Oklahoma City Thunder,Oklahoma City,60,22,0.732,—,105.7,96.5,9.15
