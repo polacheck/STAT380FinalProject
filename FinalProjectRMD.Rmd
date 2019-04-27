@@ -140,7 +140,8 @@ NFLTeamData <-
          Ties = as.numeric(Ties),
          Win_Percent = Wins / (Wins + Losses + Ties)) %>%
   filter(Year >= 2000)  %>%
-  mutate(League = "NFL")
+  mutate(League = "NFL") %>%
+  select(Year, City, Win_Percent, League)
 head(NFLTeamData)
 ```
 ```{r}
@@ -153,12 +154,26 @@ colnames(MLBTeamWinningPercentage)[1] <- "Teams"
 MLBTeamWinningPercentage %>%
   head()
 ```
+```{r}
+MLBTeamWinningPercentage2 <-
+MLBTeamWinningPercentage %>%
+gather("year", "WPCT", 2:21) %>%
+mutate(year = gsub("X", "",year)) %>%
+  mutate(league = "MLB",
+         WPCT = as.numeric(WPCT),
+         year = as.numeric(year)) %>%
+  mutate(City = Teams)
+MLBTeamWinningPercentage2 %>%
+head()
+```
+
 
 ```{r}
 NBATeamWinningPercentage <-
   NBATeamDataRaw %>%
-  select(Year, Team, City, W, L, WPCT) %>%
-  mutate(League = "NBA")
+  select(Year, City, WPCT) %>%
+  mutate(League = "NBA", 
+         WPCT = as.numeric(WPCT))
 NBATeamWinningPercentage %>%
   head()
 ```
@@ -168,6 +183,7 @@ NHLTeamWinningPercentage <-
   NHLTeamDataRaw
 NHLTeamWinningPercentage %>%
   mutate(League = "NHL") %>%
+  select(Year, City, WPCT, League) %>%
   head()
 ```
 
@@ -215,11 +231,16 @@ USACitiesEnvironment %>%
 ```
 
 ```{r}
-MLBTeamWinningPercentage2 <-
-MLBTeamWinningPercentage %>%
-gather("year", "WPCT", 2:21) %>%
-mutate(year = gsub("X", "",year))
+NFLandMLB <-
 MLBTeamWinningPercentage2 %>%
-head()
+  full_join(NFLTeamData, by = c("Teams" = "City", "year" = "Year")) %>%
+  select(City, year, WPCT, league, Win_Percent, League)
+head(NFLandMLB, 100)  
+head(NFLTeamData)
+head(MLBTeamWinningPercentage2)
+  head(NBATeamWinningPercentage)
+  NFLandMLB %>%
+  full_join(NBATeamWinningPercentage)
 ```
+
 
