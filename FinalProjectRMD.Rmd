@@ -119,7 +119,7 @@ colnames(HappyCitiesRaw)[6] <- "Community_Environment_Rank"
 HappyCities <-
   HappyCitiesRaw %>%
   select(-Rank)
-head(HappyCitiesRaw)
+head(HappyCitiesRaw, 100)
 ```
 
 ```{r}
@@ -174,7 +174,8 @@ NHLTeamWinningPercentage %>%
 ```{r}
 USACitiesPopulation <-
   CitiesPopulation %>%
-  filter(grepl("^USA", Country_Code) == TRUE)
+  filter(grepl("^USA", Country_Code) == TRUE) %>%
+  mutate(City_Name = gsub('\\(.*\\)', "", City_Name))
 
 USACitiesPopulation %>%
   head(1000)
@@ -183,7 +184,8 @@ USACitiesPopulation %>%
 ```{r}
 USACitiesEconomy <-
   CitiesEconomy %>%
-  filter(grepl("^USA", Country_Code) == TRUE)
+  filter(grepl("^USA", Country_Code) == TRUE) %>%
+  mutate(City_Name = gsub('\\(.*\\)', "", City_Name))
 
 USACitiesEconomy %>%
   head(1000)
@@ -192,7 +194,8 @@ USACitiesEconomy %>%
 ```{r}
 USACitiesIncomeDistribution <-
   CitiesIncomeDistribution %>%
-  filter(grepl("^USA", Country_Code) == TRUE)
+  filter(grepl("^USA", Country_Code) == TRUE) %>%
+  mutate(City_Name = gsub('\\(.*\\)', "", City_Name))
 
 USACitiesIncomeDistribution %>%
   head(1000)
@@ -203,9 +206,20 @@ USACitiesEnvironment <-
   CitiesEnvironment %>%
   filter(grepl("^USA", Country_Code) == TRUE)
 
+USACitiesEnvironment <-
+  USACitiesEnvironment %>%
+  mutate(City_Name = gsub('\\(.*\\)', "", City_Name))
+
 USACitiesEnvironment %>%
   head(1000)
 ```
 
-
+```{r}
+MLBTeamWinningPercentage2 <-
+MLBTeamWinningPercentage %>%
+gather("year", "WPCT", 2:21) %>%
+mutate(year = gsub("X", "",year))
+MLBTeamWinningPercentage2 %>%
+head()
+```
 
