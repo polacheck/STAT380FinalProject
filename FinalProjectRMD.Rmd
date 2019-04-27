@@ -72,11 +72,14 @@ CitiesPopulation %>%
   head()
 ```
 
+
 ```{r}
+
 colnames(CitiesEconomyRaw)[1] <- "Country_Code"
 colnames(CitiesEconomyRaw)[2] <- "City_Name"
 CitiesEconomy <-
   CitiesEconomyRaw %>%
+  filter(VAR == "GDP_REAL_PPP") %>%
   select(Year, City_Name, Country_Code, Value)
 colnames(CitiesEconomy)[4] <- "GDP"
 CitiesEconomy %>%
@@ -88,10 +91,11 @@ colnames(CitiesIncomeDistributionRaw)[1] <- "Country_Code"
 colnames(CitiesIncomeDistributionRaw)[2] <- "City_Name"
 CitiesIncomeDistribution <-
   CitiesIncomeDistributionRaw %>%
+  filter(VAR == "INCOME_DISP_HH_REAL_PPP") %>%
   select(Year, City_Name, Country_Code, Value)
 colnames(CitiesIncomeDistribution)[4] <- "IncomeDistribution"
 CitiesIncomeDistribution %>%
-  head()
+  head(1000)
 ```
 
 ```{r}
@@ -135,14 +139,16 @@ NFLTeamData <-
          Losses = as.numeric(Losses),
          Ties = as.numeric(Ties),
          Win_Percent = Wins / (Wins + Losses + Ties)) %>%
-  filter(Year >= 2000)
+  filter(Year >= 2000)  %>%
+  mutate(League = "NFL")
 head(NFLTeamData)
 ```
 ```{r}
 MLBTeamWinningPercentage <-
   MLBTeamDataRaw %>%
   select(X, X2018, X2017, X2016, X2015, X2014, X2013, X2012, X2011, X2010,
-         X2009, X2008, X2007, X2006, X2005, X2004, X2003, X2002, X2001, X2000)
+         X2009, X2008, X2007, X2006, X2005, X2004, X2003, X2002, X2001, X2000) %>%
+  mutate(League = "MLB")
 colnames(MLBTeamWinningPercentage)[1] <- "Teams"
 MLBTeamWinningPercentage %>%
   head()
@@ -151,7 +157,8 @@ MLBTeamWinningPercentage %>%
 ```{r}
 NBATeamWinningPercentage <-
   NBATeamDataRaw %>%
-  select(Year, Team, City, W, L, WPCT)
+  select(Year, Team, City, W, L, WPCT) %>%
+  mutate(League = "NBA")
 NBATeamWinningPercentage %>%
   head()
 ```
@@ -160,6 +167,7 @@ NBATeamWinningPercentage %>%
 NHLTeamWinningPercentage <-
   NHLTeamDataRaw
 NHLTeamWinningPercentage %>%
+  mutate(League = "NHL") %>%
   head()
 ```
 
@@ -181,6 +189,23 @@ USACitiesEconomy %>%
   head(1000)
 ```
 
+```{r}
+USACitiesIncomeDistribution <-
+  CitiesIncomeDistribution %>%
+  filter(grepl("^USA", Country_Code) == TRUE)
+
+USACitiesIncomeDistribution %>%
+  head(1000)
+```
+
+```{r}
+USACitiesEnvironment <-
+  CitiesEnvironment %>%
+  filter(grepl("^USA", Country_Code) == TRUE)
+
+USACitiesEnvironment %>%
+  head(1000)
+```
 
 
 
