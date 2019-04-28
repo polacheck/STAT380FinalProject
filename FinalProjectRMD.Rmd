@@ -283,3 +283,145 @@ PlusHappy
 ```
 
 
+```{r}
+
+zeros <- function(wp1, wp2, wp3, wp4){
+  if(is.na(wp3) == TRUE){
+wp3 = 0
+}
+   if(is.na(wp4) == TRUE){
+wp4 = 0
+}
+}
+
+
+aggwpct <- function(data){
+count = 0
+winpercent = 0
+
+wp1 = as.numeric(data[3])
+wp2 = as.numeric(data[6])
+wp3 = as.numeric(data[8])
+wp4 = as.numeric(data[10])
+
+if(is.na(wp1) == FALSE){
+winpercent = winpercent + wp1
+count = count + 1
+}
+if(is.na(wp2) == FALSE){
+winpercent = winpercent + wp2
+count = count + 1
+}
+if(is.na(wp3) == FALSE){
+winpercent = winpercent + wp3
+count = count + 1
+#print(is.na(wp3) == FALSE)
+}
+if(is.na(wp4) == FALSE){
+winpercent = winpercent + wp4
+count = count + 1
+}
+winpercent = winpercent / count
+return(winpercent)
+}
+```
+
+```{r}
+#do(zeros(aggwpct(PlusHappy$WPCT.x, PlusHappy$Win_Percent, PlusHappy$WPCT.y, PlusHappy$WPCT)))
+ # do(aggwpct(PlusHappy$WPCT.x, PlusHappy$Win_Percent, PlusHappy$WPCT.y, PlusHappy$WPCT))
+
+PlusHappy <-
+  PlusHappy %>%
+  mutate(WPCT_x = as.numeric(WPCT.x),
+         Win_Percent = as.numeric(Win_Percent),
+         WPCT_y = as.numeric(WPCT.y),
+         WPCT = as.numeric(WPCT))
+
+test1 <- 
+  apply(PlusHappy, 1, aggwpct)
+test1
+
+PlusHappy <-
+  PlusHappy %>%
+  mutate(Total_WinPercent = apply(PlusHappy, 1, aggwpct))
+PlusHappy
+```
+
+```{r}
+PlusHappy %>%
+  filter(year == 2018) %>%
+ggplot(aes(x = Total_WinPercent, y = Total_Score, color = Win_Percent)) +
+  geom_point() + 
+  geom_jitter()
+```
+
+
+
+
+```{r}
+NFLHappiness <-
+  NFLTeamData %>%
+ left_join(HappyCities, by = c("City" = "City"))
+
+NFLHappiness
+
+NFLHappiness %>%
+  filter(Year.x == 2018) %>%
+ggplot(aes(x = Win_Percent, y = Total_Score)) +
+  geom_point() + 
+  geom_jitter()
+```
+
+
+
+
+
+
+```{r}
+n <- 15
+SimsSmallN <- 
+  mosaic::do(1000) * qdata(~ Win_Percent, p = 0.625, 
+                          data = sample_n(NFLHappiness, size = n, replace = TRUE))
+# inspect result
+head(SimsSmallN)
+
+favstats(~ quantile, data = SimsSmallN)
+
+SimsSmallN %>%
+  ggplot() + 
+  geom_histogram(aes(x = quantile)) + 
+  ggtitle("1000 simulated .625 (average quantile to get into playoffs) for WPCT among samples of n = 15")
+
+
+NFLHappiness <-
+  NFLHappiness %>%
+  filter(Year.x == 2018)
+sim1 <-
+  NFLHappiness %>%
+  filter(Year.x == 2018) %>%
+  sample_n(size = 15, replace = TRUE)
+
+sim1 %>%
+  ggplot(aes(x = Win_Percent, y = Total_Score)) + 
+  geom_point()
+
+
+
+sim1_lm <- lm(Total_Score ~ Win_Percent, data = Sim1)
+sim1_lm$coefficients
+
+
+grid <- 
+  grid %>%
+  add_predictions(sim1_lm)
+
+confint(lm(Total_Score ~ 1, data = sim1))
+
+msummary(sim1_lm)
+
+
+ggplot(sim1, aes(x = Win_Percent)) +
+  geom_point(aes(y = Total_Score)) +
+  geom_line(aes(y = pred), data = grid, colour = "red", size = 1)
+```
+
