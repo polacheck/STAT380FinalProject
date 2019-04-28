@@ -30,7 +30,11 @@ library(DataComputing)
 library(mosaicData)
 library(tidyverse)
 library(party)
+library(tidyr)
+library(modelr)
 
+# user defined functions 
+# aggwpct - takes in a data set, calculates the winning percentage for each variable(if given).
 ```
 
 # Loading Data
@@ -57,8 +61,10 @@ NBATeamDataRaw <-
 
 ```
 
+# Data wrangling
+
+Here below, we edited the Cities Population data in case we needed it later.  We downloaded the CSV and included it in the folder as CitiesPopulationRaw.  We renamed certain variables we needed, and selected only amounts that measured the number of people in each city.  This was to prevent us from collecting data about events, such as population density.  Then, we only suggested the years, city names, countries, and values (population).
 ```{r}
-head(CitiesPopulationRaw, 500)
 colnames(CitiesPopulationRaw)[1] <- "Country_Code"
 colnames(CitiesPopulationRaw)[2] <- "City_Name"
 CitiesPopulation <-
@@ -68,13 +74,10 @@ CitiesPopulation <-
   filter(VAR == "T_T") %>%
   select(Year, City_Name, Country_Code, Value)
 colnames(CitiesPopulation)[4] <- "Population"
-CitiesPopulation %>%
-  head(10000)
 ```
 
-
+Next, we edited more data we found from online.  This one was about the economies of different cities in different years.  We went through and renamed the columns into variables we could recognize, then selected only real GDP for values.
 ```{r}
-
 colnames(CitiesEconomyRaw)[1] <- "Country_Code"
 colnames(CitiesEconomyRaw)[2] <- "City_Name"
 CitiesEconomy <-
@@ -82,10 +85,9 @@ CitiesEconomy <-
   filter(VAR == "GDP_REAL_PPP") %>%
   select(Year, City_Name, Country_Code, Value)
 colnames(CitiesEconomy)[4] <- "GDP"
-CitiesEconomy %>%
-  head(100)
 ```
 
+We did a similar task, except with disposable income.  For this, we found the disposable income per equivalised household in USD for our base value, and performed similar operations to previous data sets to clean it.
 ```{r}
 colnames(CitiesIncomeDistributionRaw)[1] <- "Country_Code"
 colnames(CitiesIncomeDistributionRaw)[2] <- "City_Name"
@@ -94,10 +96,9 @@ CitiesIncomeDistribution <-
   filter(VAR == "INCOME_DISP_HH_REAL_PPP") %>%
   select(Year, City_Name, Country_Code, Value)
 colnames(CitiesIncomeDistribution)[4] <- "IncomeDistribution"
-CitiesIncomeDistribution %>%
-  head(1000)
 ```
 
+We did some more data cleaning and cleaned air pollution levels for each city (share of inhabitants exposed to particles).  We used a similar method from above.
 ```{r}
 colnames(CitiesEnvironmentRaw)[1] <- "Country_Code"
 colnames(CitiesEnvironmentRaw)[2] <- "City_Name"
@@ -105,10 +106,9 @@ CitiesEnvironment <-
   CitiesEnvironmentRaw %>%
   select(Year, City_Name, Country_Code, Value)
 colnames(CitiesEnvironment)[4] <- "SPEX_10"
-CitiesEnvironment %>%
-  head()
 ```
 
+Finally, we included our happiness ranks for each city.  Once again, this data was taken from a website, and also includes total score, emotional/physical/wellbeing rank, income/employment rank, and community/environment rank.  We mainly focused on the total score in our analysis.
 ```{r}
 colnames(HappyCitiesRaw)[1] <- "Rank"
 colnames(HappyCitiesRaw)[2] <- "City"
@@ -119,11 +119,10 @@ colnames(HappyCitiesRaw)[6] <- "Community_Environment_Rank"
 HappyCities <-
   HappyCitiesRaw %>%
   select(-Rank)
-head(HappyCitiesRaw, 100)
 ```
 
+Next, we took care of some NFL data.  I went through and named all of the columns, and then created a column with win percent.  Through this, I also used a gsub to take different symbols out of the teams names.  Finally, I filtered the year to be after 2000, as I didn't think old NFL data would effect cities's happiness today too much.
 ```{r}
-head(NFLTeamDataRaw)
 colnames(NFLTeamDataRaw)[1] <- "Year"
 colnames(NFLTeamDataRaw)[3] <- "Team"
 colnames(NFLTeamDataRaw)[4] <- "City"
@@ -142,8 +141,10 @@ NFLTeamData <-
   filter(Year >= 2000)  %>%
   mutate(League = "NFL") %>%
   select(Year, City, Win_Percent, League)
-head(NFLTeamData)
 ```
+
+The MLB data was formatted differently, having already computed the win percentages.  I then just selected the rows, and edited it later in the document.
+
 ```{r}
 MLBTeamWinningPercentage <-
   MLBTeamDataRaw %>%
@@ -151,9 +152,9 @@ MLBTeamWinningPercentage <-
          X2009, X2008, X2007, X2006, X2005, X2004, X2003, X2002, X2001, X2000) %>%
   mutate(League = "MLB")
 colnames(MLBTeamWinningPercentage)[1] <- "Teams"
-MLBTeamWinningPercentage %>%
-  head()
 ```
+
+To edit the MLB team data, we went through and removed the x before each year, and GATHERed together the years win percentages to get a teams column, year column, and Win Percentage column.  Then, we just formatted the data so it was in the same form as the NFL data.
 ```{r}
 MLBTeamWinningPercentage2 <-
 MLBTeamWinningPercentage %>%
@@ -163,42 +164,38 @@ mutate(year = gsub("X", "",year)) %>%
          WPCT = as.numeric(WPCT),
          year = as.numeric(year)) %>%
   mutate(City = Teams)
-MLBTeamWinningPercentage2 %>%
-head()
 ```
 
 
+The NBA data was almost identical to how we wanted to it.  While we selected certain rows and added a league column, we largely left this one alone.
 ```{r}
 NBATeamWinningPercentage <-
   NBATeamDataRaw %>%
   select(Year, City, WPCT) %>%
   mutate(League = "NBA", 
          WPCT = as.numeric(WPCT))
-NBATeamWinningPercentage %>%
-  head()
 ```
 
+The NHL data was very similar to the NBA data.  We had to do very little work on it.
 ```{r}
 NHLTeamWinningPercentage <-
   NHLTeamDataRaw %>%
   mutate(League = "NHL") %>%
   select(Year, City, WPCT, League)
-NHLTeamWinningPercentage %>%
-  head()
 ```
 
+Then, we edited the CitiesPopulation data to remove all of the extra spaces, parentheses, and changed come of the combined cities into one city.  Along with this, it only selected cities that are in the United States.  In this, we used a gsub after viewing the Tampa data to make it turn 'Tampa-Hillsborough' and 'Tampa-Pinellas' into Tampa.
 ```{r}
 USACitiesPopulation <-
   CitiesPopulation %>%
   filter(grepl("^USA", Country_Code) == TRUE) %>%
-  mutate(City_Name = gsub('\\(.*\\)', "", City_Name),
+  mutate(City_Name = gsub(' \\(.*\\)', "", City_Name),
          City_Name = gsub('Tampa-Hillsborough', "Tampa", City_Name),
          City_Name = gsub('Tampa-Pinellas', "Tampa", City_Name), 
          Population = as.numeric(Population))
-
-USACitiesPopulation
 ```
 
+We did the exact same procedure on the CitiesEconomy data and found all of the United States city GDP data.
 ```{r}
 USACitiesEconomy <-
   CitiesEconomy %>%
@@ -206,11 +203,9 @@ USACitiesEconomy <-
   mutate(City_Name = gsub('\\(.*\\)', "", City_Name),
          City_Name = gsub('Tampa-Hillsborough', "Tampa", City_Name),
          City_Name = gsub('Tampa-Pinellas', "Tampa", City_Name))
-
-USACitiesEconomy %>%
-  head(1000)
 ```
 
+We completed the same process and edited the income distribution data for United States cities.
 ```{r}
 USACitiesIncomeDistribution <-
   CitiesIncomeDistribution %>%
@@ -218,11 +213,9 @@ USACitiesIncomeDistribution <-
   mutate(City_Name = gsub('\\(.*\\)', "", City_Name),
          City_Name = gsub('Tampa-Hillsborough', "Tampa", City_Name),
          City_Name = gsub('Tampa-Pinellas', "Tampa", City_Name))
-
-USACitiesIncomeDistribution %>%
-  head(1000)
 ```
 
+We used the same process to edit the CityEnvironment data to only select US cities.
 ```{r}
 USACitiesEnvironment <-
   CitiesEnvironment %>%
@@ -233,40 +226,32 @@ USACitiesEnvironment <-
   mutate(City_Name = gsub('\\(.*\\)', "", City_Name),
          City_Name = gsub('Tampa-Hillsborough', "Tampa", City_Name),
          City_Name = gsub('Tampa-Pinellas', "Tampa", City_Name))
-
-USACitiesEnvironment %>%
-  head(1000)
 ```
 
+We did the same then with the happiness data, and it just required an extra gsub to clean it to match the rest of our data.
 ```{r}
 HappyCities <-
-HappyCities %>%
-mutate(City = gsub(", ..", "", City), 
+  HappyCities %>%
+  mutate(City = gsub(", ..", "", City), 
        Year = 2018)
-
-
 ```
 
 
-
+In the next chunk of data, we joined together each of the NFL, MLB, NBA, and NHL data sets.  We did this by going through one at a time and adding it with a full join.  A full join workekd best for us, as we did want blanks if the teams did not have all sports teams combined.   We did it for each table by year and city, as we can see the winning percentage for a team in each league in each city each year.  One interesting thing we did notice was that NY and LA had all possible combinations for their teams, instead of just 2 selections.  We decided to leave this, as it could show the different loyalties within a city.
 ```{r}
 NFLandMLB <-
 MLBTeamWinningPercentage2 %>%
   full_join(NFLTeamData, by = c("Teams" = "City", "year" = "Year"))
-head(NFLandMLB, 1000)  
-#head(NFLTeamData)
-#head(MLBTeamWinningPercentage2)
-head(NHLTeamWinningPercentage)
 AddingNBA <-
 NFLandMLB %>%
  full_join(NBATeamWinningPercentage, by = c("City" = "City", "year" = "Year"))
-
 AddingNHL <-
 AddingNBA %>%
  full_join(NHLTeamWinningPercentage, by = c("City" = "City", "year" = "Year"))
 AddingNHL %>%
-  head(1000)
+  head()
 ```
+We used a similar process to add population to the list.  This was done using a left_join so we combined population with any team that ever had any sports team.  We could have done a full join, but it would have made our data table absolutely massive, and we weren't really intending on using that either.
 
 ```{r}
 PlusPopulation <-
@@ -275,61 +260,46 @@ PlusPopulation <-
   select(-Country_Code)
 ```
 
+Finally, similarly to the population code, we added in the happiness ratings for cities in 2018.  Once again, we used a left join so we don't have too many blank cells.
 ```{r}
 PlusHappy <-
   PlusPopulation %>%
  left_join(HappyCities, by = c("City" = "City"))
-PlusHappy
 ```
 
-
+Next, we wanted to write a function that went through the data and calculated the winning percentage.  We did this, by writing one that looked at three pieces of data, determined if it was NA or not.  If it was, the count went up and we included the percentage in the total.  If not, it was not included.
 ```{r}
-
-zeros <- function(wp1, wp2, wp3, wp4){
-  if(is.na(wp3) == TRUE){
-wp3 = 0
-}
-   if(is.na(wp4) == TRUE){
-wp4 = 0
-}
-}
-
-
 aggwpct <- function(data){
-count = 0
-winpercent = 0
+  count = 0
+  winpercent = 0
+  wp1 = as.numeric(data[3])
+  wp2 = as.numeric(data[6])
+  wp3 = as.numeric(data[8])
+  wp4 = as.numeric(data[10])
 
-wp1 = as.numeric(data[3])
-wp2 = as.numeric(data[6])
-wp3 = as.numeric(data[8])
-wp4 = as.numeric(data[10])
-
-if(is.na(wp1) == FALSE){
-winpercent = winpercent + wp1
-count = count + 1
-}
-if(is.na(wp2) == FALSE){
-winpercent = winpercent + wp2
-count = count + 1
-}
-if(is.na(wp3) == FALSE){
-winpercent = winpercent + wp3
-count = count + 1
-#print(is.na(wp3) == FALSE)
-}
-if(is.na(wp4) == FALSE){
-winpercent = winpercent + wp4
-count = count + 1
-}
-winpercent = winpercent / count
+  if(is.na(wp1) == FALSE){
+    winpercent = winpercent + wp1
+    count = count + 1
+    }
+  if(is.na(wp2) == FALSE){
+    winpercent = winpercent + wp2
+    count = count + 1
+    }
+  if(is.na(wp3) == FALSE){
+    winpercent = winpercent + wp3
+    count = count + 1
+    }
+  if(is.na(wp4) == FALSE){
+    winpercent = winpercent + wp4
+    count = count + 1
+    }
+  winpercent = winpercent / count
 return(winpercent)
 }
 ```
 
+Then, we applied that function we just wrote to our PlusHappy data.  First we checked it to make sure all of the winning percentages were numeric, and then used an apply function to do it to each row of our data set.  We put this in a a variable in PlusHappy called Total_WinPercent
 ```{r}
-#do(zeros(aggwpct(PlusHappy$WPCT.x, PlusHappy$Win_Percent, PlusHappy$WPCT.y, PlusHappy$WPCT)))
- # do(aggwpct(PlusHappy$WPCT.x, PlusHappy$Win_Percent, PlusHappy$WPCT.y, PlusHappy$WPCT))
-
 PlusHappy <-
   PlusHappy %>%
   mutate(WPCT_x = as.numeric(WPCT.x),
@@ -337,91 +307,296 @@ PlusHappy <-
          WPCT_y = as.numeric(WPCT.y),
          WPCT = as.numeric(WPCT))
 
-test1 <- 
-  apply(PlusHappy, 1, aggwpct)
-test1
-
 PlusHappy <-
   PlusHappy %>%
   mutate(Total_WinPercent = apply(PlusHappy, 1, aggwpct))
-PlusHappy
+PlusHappy %>%
+  head()
 ```
 
+Next, we used the data to create a graph that showed the relationshp between total winning percentage on the x axis and happiness score on the y-axis.  Then, the color was NFL winning percentage.  We noticed after looking at the graph the myriad of LA and NYC teams formed most of the large groups of straight lines. We thought there was a chance the total win percentage and happiness could be related, but if you removed Detroit (point at the very bottom), the 'relationship' was a lot less clear.  We decided to investigate the NFL data compared to the happiness data question more.
 ```{r}
 PlusHappy %>%
   filter(year == 2018) %>%
 ggplot(aes(x = Total_WinPercent, y = Total_Score, color = Win_Percent)) +
   geom_point() + 
-  geom_jitter()
+  ggtitle("Comparing total winning percentage to happiness and NFL winning percentage") +
+  geom_jitter() + 
+  xlab("Total Winning Percentage for each City") +
+  ylab("Happiness Scores")
 ```
 
 
-
+Next, we created happiness data only using the NFL and Happiness data - just to remove all the extraneous info for some further analysis.  We weren't sure if the following data provided us with any insight how NFL winning percentage affected happiness
 
 ```{r}
 NFLHappiness <-
   NFLTeamData %>%
  left_join(HappyCities, by = c("City" = "City"))
 
-NFLHappiness
 
 NFLHappiness %>%
   filter(Year.x == 2018) %>%
 ggplot(aes(x = Win_Percent, y = Total_Score)) +
   geom_point() + 
-  geom_jitter()
+  geom_jitter() +
+  xlab("NFL Winning Percentage") +
+  ylab("Happiness Score") +
+  ggtitle("NFL Winning Percentage vs Happiness Score")
 ```
 
 
 
-
-
-
+We're going to run a simulation and find if a subset of NFL in 2018 can be used to predict happiness.  First we took a subset of 15 teams.
 ```{r}
+set.seed(50)
+NFLHappiness2 <-
+  NFLHappiness %>%
+  filter(Year.x == 2018)
+
+NFLHappiness15 <- 
+  NFLHappiness %>%
+  sample_n(size = 15)
+
+```
+
+Next, we looked at the data to see the distribution of where the winning percentages  fell.
+```{r}
+favstats( ~ Win_Percent, data = NFLHappiness15)
+```
+
+Then, we looked at the 62.5 percentile, as that is the usual mark for a team to make playoffs.
+```{r}
+Playoffs15 <- qdata(~ Win_Percent, p = .625, data = NFLHappiness15)
+Playoffs15
+
+```
+Then, we look at the full data to see how well we did. About 66% of the time for real, we could have finished under the 62.5 percent and still made playoffs, but 34% of the time we would have had to have done better.
+```{r}
+favstats( ~ Win_Percent, data = NFLHappiness)
+Playoffsfull <- qdata(~ Win_Percent, p = .625, data = NFLHappiness)
+tally(~ Win_Percent < Playoffs15[2], data = NFLHappiness, format = "proportion")
+```
+We then select 15 teams from the 32 total teams in the data set many times.  From our sampling, the usual median was around 56.7255%, which was very close to our actual data.  The mean was also very close.
+```{r}
+set.seed(43)
+
 n <- 15
 SimsSmallN <- 
   mosaic::do(1000) * qdata(~ Win_Percent, p = 0.625, 
                           data = sample_n(NFLHappiness, size = n, replace = TRUE))
-# inspect result
-head(SimsSmallN)
 
 favstats(~ quantile, data = SimsSmallN)
+```
 
+
+
+Our random sampling showed the average winning percentage quantile to get into playoffs was 62.5.  However, this was widely distributed, going as low as .375 and as high as .8.  We know from experience that this will never happen, and while there is variation, it is never this extreme.  This shows on average the sampling works, but is not extremely productive in predicting year to year results, but uses real data to show it can occasionally occur.
+```{r}
 SimsSmallN %>%
   ggplot() + 
   geom_histogram(aes(x = quantile)) + 
   ggtitle("1000 simulated .625 (average quantile to get into playoffs) for WPCT among samples of n = 15")
-
-
-NFLHappiness <-
-  NFLHappiness %>%
-  filter(Year.x == 2018)
-sim1 <-
-  NFLHappiness %>%
-  filter(Year.x == 2018) %>%
-  sample_n(size = 15, replace = TRUE)
-
-sim1 %>%
-  ggplot(aes(x = Win_Percent, y = Total_Score)) + 
-  geom_point()
-
-
-
-sim1_lm <- lm(Total_Score ~ Win_Percent, data = Sim1)
-sim1_lm$coefficients
-
-
-grid <- 
-  grid %>%
-  add_predictions(sim1_lm)
-
-confint(lm(Total_Score ~ 1, data = sim1))
-
-msummary(sim1_lm)
-
-
-ggplot(sim1, aes(x = Win_Percent)) +
-  geom_point(aes(y = Total_Score)) +
-  geom_line(aes(y = pred), data = grid, colour = "red", size = 1)
 ```
+
+While we don't have happiness data for each year, I decided to expand the data by including data that goes back to 2000 for the NFL teams, to give us a larger data set.  We will now select 40 teams instead of 15.
+
+```{r}
+nBigger <- 40
+SimsBigN <- 
+  mosaic::do(1000) * qdata(~ Win_Percent, p = 0.625, 
+                          data = sample_n(NFLHappiness, size = nBigger, replace = TRUE))
+# inspect result
+head(SimsSmallN)
+```
+
+Next, I decided to construct a bootstrapped confidence interval
+```{r}
+NFLHappinessLargerData <- 
+  NFLHappiness %>%
+  sample_n(size = 40, replace = FALSE)
+# bootstrap distribution
+BootStrapTrials <- 
+  mosaic::do(1000) * qdata(~ Win_Percent, p = 0.625, 
+                           data = sample_n(NFLHappiness, size = 40, replace = TRUE))
+```
+
+Our bootstrapped seemed to appear mostly normal.  This means we can use it a lot easier for further analysis
+```{r}
+BootStrapTrials %>%
+  ggplot() + 
+  geom_histogram(aes(x = quantile))
+```
+
+
+To be 80% sure you'll finish in the playoffs (62.5%), you need to finish with a .625 winning percentage - this shows our mean is completely on point.
+```{r}
+qdata(~ quantile, p = 0.8, data = BootStrapTrials)
+```
+
+Then, changing paths slightly, I tried to apply a linear model to happiness and winning percentage. We just used the data from 2018 as our data set. The data gives us a almost horizontal line at .544.  This shows that initially it is guessing there is almost no correlation between the two.  I had hoped to maybe correlate happiness to playoff aspirations, but as there is not a strong relationship between happiness and winning percentage, I don't think that relationship would exist.
+
+```{r}
+sim1_lm <- lm(Win_Percent ~ Total_Score, data = NFLHappiness2)
+sim1_lm$coefficients
+```
+
+The confidence interval tells us we are 95% convident the y-intercept for our linear model is between .43085 and .5613366.
+```{r}
+confint(lm(Win_Percent ~ 1, data = NFLHappiness2))
+```
+
+This is telling us it thinks the intercept is between .067 and 1.02.  Then, the slope of the line could be between -.009498 and .0078
+```{r}
+confint(sim1_lm, level = 0.95)
+```
+
+After analyzing the analysis, it estimates the R squared value to be -.03422.  This means that there is probably no correlation between NFL team success and happiness.
+```{r}
+msummary(sim1_lm)
+```
+
+The graph shows the same chart as originally, between winning percentage and happiness.  Then, it shows the line of best fit overlaid on it.  This clearly shows there is probably not much of a correlation between the two.
+```{r}
+NFLHappiness2 %>%
+  ggplot(aes(x = Win_Percent, y = Total_Score)) +
+  ggtitle("Graph Showing Winning Percentage and Happiness w/ linear model on it") +
+  xlab("Winning Percentage") +
+  ylab("Happiness Score") +
+  geom_point() +
+  geom_abline(slope = -00.8483, intercept = 54.440948)
+
+
+```
+
+Then, as the happiness seemed to be unrelated from winning percentage, I built a simulation to estimate if a NFL team will make the playoffs.  This assumes each team has a random chance each year to make playoffs.  For this one, I just did a uniform distribution, ran it 10,000 times, and calculated the times it was above .625 (a 10-6 record - almost always enough to get a team into playoffs).
+
+```{r}
+n <- 10000
+sim_meet <- data.frame(
+  you <- runif(n, min = 0, max = 1)) %>%
+  mutate(result = ifelse(you >= .625, 
+                         "You Made Playoffs!", "Guess it was a rebuildling year"))
+tally(~ result, format = "percent", data = sim_meet)
+```
+
+Then, I made another simulation, changing the number of simulations we ran.  This shows that as we took more and more trials, the data got more and more normal.
+
+The following shows a normally distributed graph of proportion of times you make playoffs.   From 100-400-1600 simulations, the data gets much more normally distributed.  The mean stays approximately the same, but the variance decreases signficantly.  This stands with the information learned in STAT 414.
+
+```{r}
+simple_sim <- function(num_sim = 1000, wait = .625) { 
+  you <- runif(num_sim, min = 0, max = 1)
+  return(sum(you >= wait) / num_sim)
+}
+
+reps <- 25
+params <- data.frame(num_sims = c(100, 400, 1600))
+sim_results <- 
+  params %>%
+  group_by(num_sims) %>%
+  dplyr::do(mosaic::do(reps) * simple_sim(num_sim = .$num_sims, wait = .625))
+sim_results
+favstats(simple_sim ~ num_sims, data = sim_results)
+sim_results %>%
+  ggplot(aes(x = simple_sim, color = factor(num_sims))) + 
+  geom_density(size = 2) + 
+  scale_x_continuous("Proportion of times you make playoffs")
+```
+Next, I estimated the same data, except instead of a uniform distribution, I used a normal distribution.  I found the mean and standard deviation of the overall data, and used it in my simulations.
+```{r}
+sd(NFLHappiness$Win_Percent)
+mean(NFLHappiness$Win_Percent)
+mean(HappyCities$Total_Score)
+sd(HappyCities$Total_Score)
+```
+
+
+Then, I ran a simulation, trying to find when a city was happy and had a playoff team.  I assumed a normal distribution for simulation's sake and wanted to find out when a city was happy and had a strong NFL team.
+```{r}
+n <- 100000
+sim_meetExp <- data.frame(
+  you <- rnorm(n, 0.4990718, .1924932),
+  happycity <- rnorm(n, 56.10956, 8.052058)) %>%                
+  mutate(result = ifelse(test = (you >= .625 & happycity >= 56.109), 
+                         yes = "Good Times", no = "Something's Wrong"))
+tally(~ result, format = "percent", data = sim_meetExp)
+```
+
+The following shows the combinatino of having a happy city and a strong NFL team.  The shape of the graph makes sense, as it is two normally distributed graph on top of each other.  We can see the one side of Happiness (above the mean) is selected, while  the sampled winning percentage is above .625.  This shows that it is fairly rare to have a good NFL team and a happy city - so enjoy it while you can if you're lucky enough to live in the respective cities!
+```{r}
+sim_meetExp %>%
+  ggplot() + 
+  geom_point(aes(x = you, y = happycity, color = result), alpha = 0.3) + 
+  xlab("Sampled Winning Percentage") + 
+  ggtitle("Savor living in a happy city and having a good team") + 
+  scale_x_continuous(limits = c(0, 1)) + 
+  scale_y_continuous(limits = c(0, 100)) 
+```
+
+Then, changing paths slightly, we started analyzing winning percentage and economic status.  We added the economic data to the PlusHappy table from before.
+```{r}
+EconomyAndStats <- PlusHappy %>%
+left_join(USACitiesEconomy, by = c("City" = "City_Name", "year" = "Year"))
+
+head(EconomyAndStats)
+```
+
+The graph appears to be normally distributed.  It shows winning percentage against GDP in each city.  While there are a few outliers, these points have a smaller GDP.  It seems that the data does follow a normal distribution, as there is more GDP when the teams are closer to .500 winning percentage, although it also has more lower ones too along with higher ones.
+```{r}
+EconomyAndStats <-
+EconomyAndStats %>%
+filter(year < 2017) %>%
+filter(year > 2000)
+
+EconomyAndStats %>%
+ggplot(aes(x = Total_WinPercent, y = GDP, color = year)) +
+geom_point() +
+  ggtitle("Winning Percentage vs GDP") +
+  xlab("Winning Percentage") +
+  ylab("GDP")
+```
+
+The next graph shows the 2015 data with city labels put on it.  It mostly back up our findings last time, as teams with the largest GDP were around 500, mainly being Boston, Houston, and Dallas.  There were a few extreme outliers, such as San Antonio.  However, this makes sense as it only has one team, indicating its smaller size as a city.  The Spurs happen to be good now, so they'll have a high winning percentage, and not have any other teams to balance it out.  
+```{r}
+EconomyAndStats %>%
+  filter(year == 2015) %>%
+  ggplot(aes(x = Total_WinPercent, y = GDP)) +
+  ggtitle("Cities GDP vs Winning Percentage in 2015") + 
+  xlab("City Average Winning Percentage") + 
+  ylab("GDP per City") +
+  geom_point() +
+  geom_text(aes(label = City), size = 3)
+```
+
+Finally, we made a dendrogram showing similarities to winning percentage.  This was some machine learning, as it went through and determined what cities were most similar to each other.  The graph apppears to work well, as the New York City teams were all close to each other.  Then, Los Angeles, Houston, and Chicago had somewhat close nodes.  This indicates they are all similar, possibly showing large cities tend to have similar winning percentages per city.
+```{r}
+EconomyAndStats2 <-
+EconomyAndStats %>%
+filter(year == 2015)
+
+EAS_std <-
+EconomyAndStats2 %>%
+mutate(ScaledWPCT = scale(EconomyAndStats2$Total_WinPercent)) %>%
+as.data.frame()
+
+EAS_std
+favstats(~ `ScaledWPCT`, data = EAS_std)
+
+
+EAS_dist <- dist(EAS_std)
+
+EAS_dendo <-
+EAS_dist %>%
+hclust(method = "complete")
+
+print(EAS_dendo)
+EAS_dendo %>%
+plot(cex = 0.9, labels = EconomyAndStats2$City, lwd = 2,
+main = "2015 City Similarities in Winning Percentages")
+```
+
+
+
+
 
