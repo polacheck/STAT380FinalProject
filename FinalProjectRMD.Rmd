@@ -267,7 +267,7 @@ PlusHappy <-
  left_join(HappyCities, by = c("City" = "City"))
 ```
 
-Next, we wanted to write a function that went through the data and calculated the winning percentage.  We did this, by writing one that looked at three pieces of data, determined if it was NA or not.  If it was, the count went up and we included the percentage in the total.  If not, it was not included.
+Next, we wanted to write a function that went through the data and calculated the aggregate winning percentage fore each city.  We did this, by writing a function that looked at the four winning percentages, then determined if it was NA or not.  If it was not NA, the count went up and we included the percentage in the total.  If it was NA, it was not included.
 ```{r}
 aggwpct <- function(data){
   count = 0
@@ -314,20 +314,20 @@ PlusHappy %>%
   head()
 ```
 
-Next, we used the data to create a graph that showed the relationshp between total winning percentage on the x axis and happiness score on the y-axis.  Then, the color was NFL winning percentage.  We noticed after looking at the graph the myriad of LA and NYC teams formed most of the large groups of straight lines. We thought there was a chance the total win percentage and happiness could be related, but if you removed Detroit (point at the very bottom), the 'relationship' was a lot less clear.  We decided to investigate the NFL data compared to the happiness data question more.
+Next, we used the data to create a graph that showed the relationshp between total winning percentage on the x axis and happiness score on the y-axis.  Then, the color was NFL winning percentage.  We noticed after looking at the graph the myriad of LA and NYC teams formed most of the large groups of straight lines. We thought there was a chance the total win percentage and happiness could be related, but if you removed Detroit (point at the very bottom), the 'relationship' was a lot less clear.  We decided to investigate the NFL data compared to the happiness data question more. The color represnts the NFL team's win percent.
 ```{r}
 PlusHappy %>%
   filter(year == 2018) %>%
 ggplot(aes(x = Total_WinPercent, y = Total_Score, color = Win_Percent)) +
   geom_point() + 
-  ggtitle("Comparing total winning percentage to happiness and NFL winning percentage") +
+  ggtitle("Comparing total winning percentage to happiness and NFL winning percentage in 2018") +
   geom_jitter() + 
-  xlab("Total Winning Percentage for each City") +
+  xlab("Total Winning Percentage for each City in 2018") +
   ylab("Happiness Scores")
 ```
 
 
-Next, we created happiness data only using the NFL and Happiness data - just to remove all the extraneous info for some further analysis.  We weren't sure if the following data provided us with any insight how NFL winning percentage affected happiness
+Next, we created happiness data only using the NFL and Happiness data - just to remove all the extraneous info for some further analysis.  We weren't sure if the following data provided us with any insight how NFL winning percentage affected happiness.
 
 ```{r}
 NFLHappiness <-
@@ -342,7 +342,7 @@ ggplot(aes(x = Win_Percent, y = Total_Score)) +
   geom_jitter() +
   xlab("NFL Winning Percentage") +
   ylab("Happiness Score") +
-  ggtitle("NFL Winning Percentage vs Happiness Score")
+  ggtitle("NFL Winning Percentage vs Happiness Score 2018")
 ```
 
 
@@ -391,7 +391,7 @@ favstats(~ quantile, data = SimsSmallN)
 
 
 
-Our random sampling showed the average winning percentage quantile to get into playoffs was 62.5.  However, this was widely distributed, going as low as .375 and as high as .8.  We know from experience that this will never happen, and while there is variation, it is never this extreme.  This shows on average the sampling works, but is not extremely productive in predicting year to year results, but uses real data to show it can occasionally occur.
+Our random sampling showed the average winning percentage quantile to get into playoffs was 62.5.  However, this was widely distributed, going as low as .375 and as high as .8.  We know from studying the game that this will never happen, and while there is variation, it is never this extreme.  This shows on average the sampling works, but is not extremely productive in predicting year to year results, but uses real data to show it can occasionally occur.
 ```{r}
 SimsSmallN %>%
   ggplot() + 
@@ -421,7 +421,7 @@ BootStrapTrials <-
                            data = sample_n(NFLHappiness, size = 40, replace = TRUE))
 ```
 
-Our bootstrapped seemed to appear mostly normal.  This means we can use it a lot easier for further analysis
+Our bootstrapped data seemed to appear mostly normal.  This means we can use it a lot easier for further analysis
 ```{r}
 BootStrapTrials %>%
   ggplot() + 
@@ -434,7 +434,7 @@ To be 80% sure you'll finish in the playoffs (62.5%), you need to finish with a 
 qdata(~ quantile, p = 0.8, data = BootStrapTrials)
 ```
 
-Then, changing paths slightly, I tried to apply a linear model to happiness and winning percentage. We just used the data from 2018 as our data set. The data gives us a almost horizontal line at .544.  This shows that initially it is guessing there is almost no correlation between the two.  I had hoped to maybe correlate happiness to playoff aspirations, but as there is not a strong relationship between happiness and winning percentage, I don't think that relationship would exist.
+Then, changing paths slightly, we tried to apply a linear model to happiness and winning percentage. We just used the data from 2018 as our data set. The data gives us a almost horizontal line at .544.  This shows that initially it is guessing there is almost no correlation between the two.  We had hoped to maybe correlate happiness to playoff aspirations, but as there is not a strong relationship between happiness and winning percentage, we don't think that relationship actually exists.
 
 ```{r}
 sim1_lm <- lm(Win_Percent ~ Total_Score, data = NFLHappiness2)
@@ -451,7 +451,7 @@ This is telling us it thinks the intercept is between .067 and 1.02.  Then, the 
 confint(sim1_lm, level = 0.95)
 ```
 
-After analyzing the analysis, it estimates the R squared value to be -.03422.  This means that there is probably no correlation between NFL team success and happiness.
+After investigating the computer's analysis, it estimates the R squared value to be -.03422.  This means that there is probably no correlation between NFL team success and happiness.
 ```{r}
 msummary(sim1_lm)
 ```
@@ -469,18 +469,18 @@ NFLHappiness2 %>%
 
 ```
 
-Then, as the happiness seemed to be unrelated from winning percentage, I built a simulation to estimate if a NFL team will make the playoffs.  This assumes each team has a random chance each year to make playoffs.  For this one, I just did a uniform distribution, ran it 10,000 times, and calculated the times it was above .625 (a 10-6 record - almost always enough to get a team into playoffs).
+Then, as the happiness seemed to be unrelated from winning percentage, we built a simulation to estimate if a NFL team will make the playoffs.  This assumes each team has a random chance each year to make playoffs.  For this one, we did a uniform distribution, ran it 10,000 times, and calculated the times it was above .625 (a 10-6 record - almost always enough to get a team into playoffs).
 
 ```{r}
 n <- 10000
 sim_meet <- data.frame(
   you <- runif(n, min = 0, max = 1)) %>%
   mutate(result = ifelse(you >= .625, 
-                         "You Made Playoffs!", "Guess it was a rebuildling year"))
+                         "You Made the Playoffs!", "Guess it was a rebuildling year"))
 tally(~ result, format = "percent", data = sim_meet)
 ```
 
-Then, I made another simulation, changing the number of simulations we ran.  This shows that as we took more and more trials, the data got more and more normal.
+Then, we created another simulation, changing the number of simulations we ran.  This shows that as we took more and more trials, the data got more and more normal, which logically makes sense.
 
 The following shows a normally distributed graph of proportion of times you make playoffs.   From 100-400-1600 simulations, the data gets much more normally distributed.  The mean stays approximately the same, but the variance decreases signficantly.  This stands with the information learned in STAT 414.
 
@@ -512,7 +512,7 @@ sd(HappyCities$Total_Score)
 ```
 
 
-Then, I ran a simulation, trying to find when a city was happy and had a playoff team.  I assumed a normal distribution for simulation's sake and wanted to find out when a city was happy and had a strong NFL team.
+Then, we ran a simulation, trying to find when a city was happy and had a playoff team.  We assumed a normal distribution for simulation's sake and wanted to find out when a city was happy and had a strong NFL team.
 ```{r}
 n <- 100000
 sim_meetExp <- data.frame(
@@ -557,7 +557,7 @@ geom_point() +
   ylab("GDP")
 ```
 
-The next graph shows the 2015 data with city labels put on it.  It mostly back up our findings last time, as teams with the largest GDP were around 500, mainly being Boston, Houston, and Dallas.  There were a few extreme outliers, such as San Antonio.  However, this makes sense as it only has one team, indicating its smaller size as a city.  The Spurs happen to be good now, so they'll have a high winning percentage, and not have any other teams to balance it out.  
+The next graph shows the 2015 data with city labels put on it.  It mostly backs up our findings from last time, as teams with the largest GDP were around 500, mainly being Boston, Houston, and Dallas.  There were a few extreme outliers, such as San Antonio.  However, this makes sense as it only has one team, indicating its smaller size as a city.  The Spurs happen to be good now, so they'll have a high winning percentage, and not have any other teams to balance it out.  
 ```{r}
 EconomyAndStats %>%
   filter(year == 2015) %>%
@@ -595,7 +595,6 @@ EAS_dendo %>%
 plot(cex = 0.9, labels = EconomyAndStats2$City, lwd = 2,
 main = "2015 City Similarities in Winning Percentages")
 ```
-
 
 
 
