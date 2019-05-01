@@ -10,7 +10,6 @@ output: html_notebook
 ```{r echo=TRUE, message=FALSE}
 # always clean up R environment
 rm(list = ls())
-
 # load all packages here
 library(mdsr)
 library(tidyverse)
@@ -35,6 +34,7 @@ library(modelr)
 
 # user defined functions 
 # aggwpct - takes in a data set, calculates the winning percentage for each variable(if given).
+# simple_sim - runs a simulation on a uniform distribution
 ```
 
 # Loading Data
@@ -600,8 +600,8 @@ main = "2015 City Similarities in Winning Percentages")
 ## Conclusion
 In conclusion, we had hoped to find a relation between sports team's successes and failures to how a city operates both economically and emotionally. We found that there is no significant relation. 
 
-One can come up with the idea that as people who don't live in these cities, we only know what they are like through sports. As Philadelphia teams struggled in the past years, there was not really a change in the the mood of the city for the entire year. If we broke down the city data to a smaller scale, as teams host championship games or compete in big games, there may be an actual relation.
+One can come up with the idea that as people who don't live in these cities, we only know what they are like through sports. As Philadelphia teams struggled in the past years, there was not really a change in the the mood of the city for the entire year. If we broke down the city data to a smaller scale, as teams host championship games or compete in big games, there may be an actual relation.  
 
 If we were to look further into this, we would hope to see weekly or monthly data. When looking at city's statistics, by making it so huge time periods, we see minimal changes, but drastic changes in the sports success force there to be no correlation.
 
-As big as sports teams may feel to a city, they are nothing compared to the size of the cities they represent. There is too much going on for a few extra happy people to actually change statistics of the whole city, enough to force a trend to be apparent.
+As big as sports teams may feel to a city, they are nothing compared to the size of the cities they represent. There is too much going on for a few extra happy people to actually change statistics of the whole city, enough to force a trend to be apparent.  This was seen best in the simulation, as the graphs appear to be independent between happiness and winning percentage.  This was really seen when the linear model produced a straight line.  Along with this, we also saw there wasn't a large difference between economic data and winning percentage, instead that made more of a normal curve. We suspected this was because the big cities, with a large GDP had many sports teams to balance their winning percentages out, with a few smaller teams, who were particularly bad and good.  This once again showed that winning percentage probably wasn't tied to GDP changes. Finally, we also saw that city sizes frequently caused their winning percentages to be grouped together.  Overall, we were disappointed to not find many correlations, but we reported our findings fully and accurately and did not attempt to spin and taper with the results to support our original thoughts.
